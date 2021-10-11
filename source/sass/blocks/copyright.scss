@@ -1,0 +1,26 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.copyright__by {
+  margin-right: 13px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.copyright__icon {
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover {
+    fill: $basic-blue;
+  }
+}

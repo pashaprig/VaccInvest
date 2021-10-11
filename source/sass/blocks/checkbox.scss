@@ -1,0 +1,61 @@
+//Check
+
+.check {
+  display: flex;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 96px;
+    margin-bottom: 32px;
+
+    &--less-margin {
+      margin-left: 32px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.check__input {
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  margin-right: 23px;
+  appearance: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:active {
+    background-color: $input-grey-active;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 25px;
+  }
+}
+
+.check__box {
+  position: absolute;
+  margin-left: 16px;
+  margin-right: 20px;
+}
+
+/* Checked */
+
+.check__input:checked + .check__box {
+  width: 23px;
+  height: 16px;
+  background-image: url("../img/tick.svg");
+}
+
+.check__input:checked:active + .check__box {
+  opacity: 0.3;
+}
+
+/* Disabled */
+
+.check__input:disabled {
+  background-color: $bcg-photo;
+}

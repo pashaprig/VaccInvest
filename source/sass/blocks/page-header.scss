@@ -1,0 +1,22 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__bottom {
+  min-height: 56px;
+}
+
+.page-header__top {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  z-index: 1;
+}

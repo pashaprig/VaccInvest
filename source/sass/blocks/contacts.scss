@@ -1,0 +1,24 @@
+.contacts {
+  margin-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 4px;
+  }
+}
+
+.contacts a {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: $basic-black;
+  text-decoration: none;
+
+  &:hover {
+    color: $basic-blue;
+  }
+
+  &:active {
+    color: $basic-black;
+    opacity: 0.3;
+  }
+}

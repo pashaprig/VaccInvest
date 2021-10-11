@@ -1,0 +1,10 @@
+.modal {
+  display: none;
+  min-height: 280px;
+  background-color: $basic-white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  &--open {
+    display: block;
+  }
+}

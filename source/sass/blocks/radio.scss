@@ -1,0 +1,60 @@
+//Radio
+
+.radio {
+  display: flex;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 22px;
+  }
+}
+
+.radio__input {
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  margin-right: 24px;
+  appearance: none;
+
+  cursor: pointer;
+
+  &:active {
+    background-color: $input-grey-active;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 24px;
+  }
+}
+
+.radio__box {
+  position: absolute;
+  margin-left: 18px;
+}
+
+/* Checked */
+
+.radio__input:checked + .radio__box {
+  width: 20px;
+  height: 20px;
+  background-color: $radio;
+  border-radius: 50%;
+}
+
+.radio__input:checked:active + .radio__box {
+  opacity: 0.3;
+}
+
+/* Disabled */
+
+.radio__input:disabled {
+  background-color: $bcg-photo;
+}
