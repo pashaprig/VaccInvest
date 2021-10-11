@@ -1,0 +1,30 @@
+.orange-line {
+  margin-bottom: 30px;
+  background-color: $basic-orange;
+
+  &--w229-h4 {
+    width: 229px;
+    height: 4px;
+  }
+
+  &--w175-h3 {
+    width: 175px;
+    height: 3px;
+  }
+
+  &--w68-h1-mb20 {
+    width: 68px;
+    height: 1px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  &--tablet-block {
+    @media (max-width: $tablet-width) {
+      display: block;
+    }
+  }
+}

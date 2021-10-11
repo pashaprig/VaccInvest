@@ -1,24 +1,22 @@
 .contacts {
-  margin-top: 39px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 65px;
+  border-left: 1px solid $contacts-grey;
+  border-right: 1px solid $contacts-grey;
 
-  @media (min-width: $tablet-width) {
-    margin-top: 4px;
-  }
-}
-
-.contacts a {
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  color: $basic-black;
-  text-decoration: none;
-
-  &:hover {
-    color: $basic-blue;
+  @media (max-width: $tablet-width) {
+    border-right: none;
   }
 
-  &:active {
-    color: $basic-black;
-    opacity: 0.3;
+  @media (max-width: $mobile-width) {
+    grid-column: span 2;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 0;
+    border-top: 1px solid $contacts-grey;
+    border-left: none;
+    border-bottom: 1px solid $contacts-grey;
   }
 }

@@ -1,0 +1,141 @@
+.places {
+  position: relative;
+  padding-bottom: 300px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.places__big-fotos {
+  @media (max-width: $tablet-width) {
+    margin-right: 76px;
+    margin-left: 76px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+}
+
+.placeces__more-information {
+  position: relative;
+  max-width: 1444px;
+  margin-left: 100px;
+  padding-bottom: 475px;
+  background: url("../../img/europe.svg") no-repeat $basic-white;
+  background-position: 50% 0;
+  background-size: cover;
+
+  @media (max-width: $tablet-width) {
+    max-width: none;
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 0;
+    background: none;
+  }
+}
+
+.places__title {
+  margin: 0;
+  padding: 0;
+  max-width: 360px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+
+  @media (max-width: $tablet-width) {
+    max-width: none;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 80px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.places__about {
+  margin: 0;
+  margin-bottom: 55px;
+  padding: 0;
+  max-width: 350px;
+  opacity: 0.7;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+.places__info {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.places__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  padding: 0;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 90px;
+  }
+
+  @media (max-width: $mobile-width) {
+    justify-content: center;
+  }
+}
+
+.places__item {
+  position: relative;
+  max-width: 350px;
+  margin-bottom: 100px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 35px;
+  }
+}
+
+.places__state {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 215px;
+  height: 63px;
+  background-color: $basic-white;
+}
+
+.places__name {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: $nav-black;
+}
+
+.places__img {
+  @media (max-width: $tablet-width) {
+    width: 288px;
+    height: 425px;
+    object-fit: cover;
+  }
+}

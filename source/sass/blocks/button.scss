@@ -2,29 +2,57 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 280px;
-  min-height: 58px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "PT Sans", "Arial", sans-serif;
+  max-width: 260px;
+  min-height: 15px;
+  padding: 30px 40px;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 12px;
+  line-height: 16px;
   color: $basic-white;
   text-transform: uppercase;
-  background-color: $basic-blue;
+  letter-spacing: 2px;
+  background-color: $basic-orange;
   border: none;
+  cursor: pointer;
+
+  &--extended {
+    max-width: none;
+  }
+
+  &--w176-h50 {
+    width: 176px;
+    height: 50px;
+    padding: 0;
+  }
 
   &:hover {
     background-color: $button-hover;
   }
 
-  &:active {
-    background-color: $button-active;
-    color: rgba(255, 255, 255, 0.3);
+  @media (max-width: $tablet-width) {
+    &--tablet-w250 {
+      margin: 0;
+      padding: 0;
+      width: 250px;
+      height: 50px;
+    }
   }
 
-  &:disabled {
-    background-color: $button-disabled;
+  @media (max-width: $mobile-width) {
+    &--mobile-w288 {
+      max-width: none;
+      width: 288px;
+    }
   }
+
+  // &:active {
+  //   opacity: 0.7;
+  //   background-color: rgba(255, 255, 255, 0.3);
+  // }
+
+  // &:disabled {
+  //   opacity: 0.5;
+  //   background-color: $basik-black;
+  // }
 }

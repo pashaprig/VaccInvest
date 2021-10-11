@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -11,40 +15,30 @@
   overflow: hidden;
 }
 
-.container {
-  min-height: 100%;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 60px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 120px;
-  }
+ul {
+  list-style: none;
 }
 
-input::placeholder {
-  color: var(--basic-black);
-  opacity: 1;
+a {
+  text-decoration: none;
 }
 
-input[type="text"]::-webkit-input-placeholder {
-  color: var(--basic-black);
-  opacity: 1;
-}
+// input::placeholder {
+//   color: var($phone-black);
+// }
 
-input[type="text"]::-moz-placeholder {
-  color: var(--basic-black);
-  opacity: 1;
-}
+// input[type="text"]::-webkit-input-placeholder {
+//   color: var(--basic-black);
+// }
 
-input[type="text"]:-moz-placeholder {
-  color: var(--basic-black);
-  opacity: 1;
-}
+// input[type="text"]::-moz-placeholder {
+//   color: var(--basic-black);
+// }
 
-input[type="text"]:-ms-input-placeholder {
-  color: var(--basic-black);
-  opacity: 1;
-}
+// input[type="text"]:-moz-placeholder {
+//   color: var(--basic-black);
+// }
+
+// input[type="text"]:-ms-input-placeholder {
+//   color: var(--basic-black);
+// }

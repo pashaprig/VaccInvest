@@ -1,15 +1,19 @@
 .page-body {
-  position: relative;
-  margin: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 21px;
-  line-height: 15px;
-  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 28px;
+  color: $nav-black;
   box-shadow: 0 5px 15px rgba(231, 229, 229, 0.9);
 
-  @media (min-width: $desktop-width) {
-    max-width: 1200px;
-    margin: 0 auto;
+  @media (max-width: $tablet-width) {
+    padding-bottom: 54px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 26px;
   }
 }

@@ -1,12 +1,8 @@
 .logo {
-  width: 320px;
-  height: 96px;
+  width: 50%;
 
-  @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
+  @media (max-width: $tablet-width) {
+    width: 44px;
+    margin-left: 21px;
   }
 }
