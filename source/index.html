@@ -13,10 +13,11 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <picture>
-        <img class="logo" src="img/logo.svg" width="57" height="22" alt="Way логотип">
+      <div class="logo">
+        <img class="logo__img" src="img/logo.png" width="35" height="35" alt="VaccInvest логотип">
         <P>VaccInvest</P>
-      </picture>
+      </div>
+
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="#">Про проект</a></li>
@@ -25,9 +26,11 @@
           <li class="main-nav__item"><a href="#">Калькулятор</a></li>
           <li class="main-nav__item"><a href="#">Преимущества</a></li>
         </ul>
-        <div class="main-nav__button">
-          <a class="" href="#">Начать зарабатывать</a>
-        </div>
+
+        <a class="button button--open-navigation-posotion main-nav__button" href="#">Начать зарабатывать <!--main-nav__button - скрывает при закрытом меню на мобилке кнопку-->
+          <img src="img/iconArrowButton.svg" width="20" height="20" alt="Стрелочка вправо">
+        </a>
+
         <button class="main-nav__toggle" type="button">
           <span class=" visually-hidden">Открыть меню</span>
         </button>
@@ -35,10 +38,35 @@
     </header>
 
     <main class="main">
-      <div class="hero">
+      <section class="hero">
+        <div class="hero__img">
+          <img src="img/hero.jpg" width="328" height="184" alt="Лаборант держит пробирку">
+        </div>
+        <div class="herro__form">
+          <h1>Получайте стабильные дивиденды от 80% в месяц</h1>
+          <form class="form form--top">
+            <label class="visually-hidden" for="name1">Введите имя ифамилию</label>
+            <input type="text" id="name1" name="name" placeholder="Имя Фамилия">
 
-      </div>
+            <label class="visually-hidden" for="tel1">Введите телефон</label>
+            <input type="tel" id="tel1" name="tel" placeholder="Телефон">
 
+            <label class="visually-hidden" for="email1">Введите email</label>
+            <input type="email" id="email1" name="email1" placeholder="Почта">
+
+            <button class="button button--open-navigation-posotion main-nav__button" type="submit">Начать зарабатывать
+              <img src="img/iconArrowButton.svg" width="20" height="20" alt="Стрелочка вправо">
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="profitability">
+        <h2 class="heading2">Доходность акций за 2021 год</h2>
+        <div class="vaccine">
+
+        </div>
+      </section>
 
     </main>
 
