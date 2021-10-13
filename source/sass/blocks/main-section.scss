@@ -1,0 +1,10 @@
+.main-section__heading-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  min-height: 112px;
+  border: 2px solid transparent;
+  border-image: linear-gradient(98.54deg, #0068ec -1.05%, #00bbf9 101.72%);
+  border-image-slice: 1;
+  background-color: $main-section;
+}
