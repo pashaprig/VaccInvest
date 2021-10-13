@@ -15,9 +15,15 @@ html {
   overflow: hidden;
 }
 
-// ul {
-//   list-style: none;
-// }
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
 
 a {
   text-decoration: none;
@@ -26,23 +32,3 @@ a {
 p {
   margin: 0;
 }
-
-// input::placeholder {
-//   color: var($phone-black);
-// }
-
-// input[type="text"]::-webkit-input-placeholder {
-//   color: var(--basic-black);
-// }
-
-// input[type="text"]::-moz-placeholder {
-//   color: var(--basic-black);
-// }
-
-// input[type="text"]:-moz-placeholder {
-//   color: var(--basic-black);
-// }
-
-// input[type="text"]:-ms-input-placeholder {
-//   color: var(--basic-black);
-// }
