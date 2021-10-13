@@ -1,5 +1,6 @@
 /* Fonts */
 
+// Raleway
 @font-face {
   font-family: "Raleway";
   font-style: normal;
@@ -75,4 +76,18 @@
     url("../../fonts/Raleway-Black.woff2") format("woff2"),
     url("../../fonts/Raleway-Black.woff") format("woff"),
     url("../../fonts/Raleway-Black.ttf") format("truetype");
+}
+
+
+// Roboto
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Roboto"),
+    url("../../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../../fonts/Roboto-Bold.woff") format("woff"),
+    url("../../fonts/Roboto-Bold.ttf") format("truetype");
 }

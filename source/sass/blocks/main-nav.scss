@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   max-width: 1170px;
-  background-color: $main-theme;
+  background: $gradient;
   padding-top: 30px;
   padding-bottom: 30px;
 
@@ -36,7 +36,7 @@
 
 .main-nav__list {
   display: flex;
-  background-color: $main-theme;
+  background: $gradient;
 
   @media (max-width: $desktop-width) {
     min-width: 320px;
@@ -124,7 +124,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  background-color: $main-theme;
+  background: $gradient;
 
   &::before,
   &::after {
