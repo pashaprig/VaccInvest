@@ -1,0 +1,21 @@
+.to-do {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.to-do img {
+  align-self: center;
+  margin-bottom: 8px;
+}
+
+.to-do__title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: $vaccine1;
+  background: $gradient; //Gradient color
+  background-clip: text; //Gradient color
+  -webkit-text-fill-color: transparent; //Gradient color
+}
