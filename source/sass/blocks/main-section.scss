@@ -1,3 +1,7 @@
+.main-section {
+  margin-bottom: 35px;
+}
+
 .main-section__heading-wrapper {
   position: relative;
   display: flex;
@@ -8,7 +12,7 @@
   box-sizing: border-box;
   border-radius: 5px;
 
-  &::before {
+  &::before { //Gradient
     content: "";
     position: absolute;
     top: -2px;
@@ -31,6 +35,20 @@
     min-height: 48px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
       url("../../img/abuot.jpg") no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &--bcg-achievements {
+    min-height: 80px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+      url("../../img/achievements.jpg") no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &--bcg-currency {
+    min-height: 48px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+      url("../../img/currency.jpg") no-repeat;
     background-size: 100% 100%;
   }
 }

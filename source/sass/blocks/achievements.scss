@@ -1,0 +1,13 @@
+.achievements {
+  margin-bottom: 56px;
+}
+
+.achievements__img {
+  margin-bottom: 32px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
