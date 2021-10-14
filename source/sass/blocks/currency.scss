@@ -1,0 +1,56 @@
+.currency {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  margin-bottom: 16px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.currency__about {
+  display: flex;
+  flex-direction: column;
+}
+
+.currency__img {
+  margin-bottom: 4px;
+}
+
+.currency__name {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $text-black2;
+}
+
+.currency__percent {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  color: $vaccine1;
+  background: $gradient; //Gradient color
+  background-clip: text; //Gradient color
+  -webkit-text-fill-color: transparent; //Gradient color
+}
+
+.currency__dynamic {
+  height: 100%;
+  padding: 4px 8px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: $currencyPlus;
+  background: rgba(25, 197, 118, 0.2);
+  border-radius: 300px 300px 300px 300px;
+
+  &--red {
+    color: $currencyMinus;
+    background: rgba(197, 25, 25, 0.2);
+  }
+}
+
+.currency__graph img {
+  width: 100%;
+}
