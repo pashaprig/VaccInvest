@@ -18,6 +18,8 @@
 .calculate__value {
   display: flex;
   align-items: center;
+  box-sizing: border-box;
+  width: 100%;
   margin-bottom: 32px;
   padding: 12px 24px;
   font-weight: 400;
@@ -43,6 +45,7 @@
 }
 
 .calculate__img {
+  width: 100%;
   margin-top: 32px;
   margin-bottom: 50px;
 }
