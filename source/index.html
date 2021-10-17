@@ -7,8 +7,8 @@
   <title>VaccInvest</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="ico/favicon.ico">
-  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/180.png">
+  <!-- <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/180.png"> -->
   <!-- <link rel="manifest" href="ico/manifest.webmanifest"> -->
   <!-- <link rel="preload" href="./fonts/Raleway-Medium.woff2" as="font"> -->
 </head>
@@ -17,7 +17,7 @@
   <header class="page-header">
     <div class="logo">
       <img class="logo__img" src="img/logo.png" width="35" height="35" alt="VaccInvest логотип">
-      <P>VaccInvest</P>
+      <p class="logo__name">VaccInvest</p>
     </div>
 
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -47,7 +47,7 @@
       </div>
 
       <form class="form form--top">
-        <h1 class="hero__heading">Получайте стабильные дивиденды от 80% в&nbsp;месяц</h1>
+        <h1 class="form__heading">Получайте стабильные дивиденды от 80% в&nbsp;месяц</h1>
         <label class="visually-hidden" for="name1">Введите имя и фамилию</label>
         <input type="text" id="name1" name="name" placeholder="Имя Фамилия">
 
@@ -96,7 +96,7 @@
         <h3 class="about__title"><span>3,5&nbsp;млрд</span><br>вакцинировалось</h3>
         <p class="about__info">Каждый день вакцинируются около <b>10&nbsp;-&nbsp;100&nbsp;тыс</b></p>
       </div>
-      <div class="about">
+      <div class="about__shares">
         <p class="about__more about__more--first">
           Акции производителей самых эффективных вакцин дорожают каждый день пандемии.
           Вложения в ценные бумаги крупнейших фармакологических компаний обеспечивают сотням инвесторов стабильный
@@ -170,7 +170,8 @@
 
       <div class="currency">
         <div class="currency__about">
-          <img class="currency__img" src="img/johnson&johnson.svg" width="120" height="24" alt="Логотип Johnson & Johnson"></img>
+          <img class="currency__img" src="img/johnson&johnson.svg" width="120" height="24"
+            alt="Логотип Johnson & Johnson"></img>
           <span class="currency__name">Johnson & Johnson</span>
           <span class="currency__percent">$179.47</span>
         </div>
@@ -196,85 +197,85 @@
 
       <div class="to-do">
         <img src="img/message.svg" alt="Иконка сообщения">
-        <h3  class="to-do__title">Ответьте на звонок аналитика</h3>
+        <h3 class="to-do__title">Ответьте на звонок аналитика</h3>
         <p>Вас проконсультируют по работе с нашей системой</p>
       </div>
 
       <div class="to-do">
         <img src="img/flowOut.svg" alt="Иконка исходящий поток">
-        <h3  class="to-do__title">Действуйте, как инвестор</h3>
+        <h3 class="to-do__title">Действуйте, как инвестор</h3>
         <p>Внесите депозит и преумножайте дивиденды</p>
       </div>
 
       <div class="to-do">
         <img src="img/flowIn.svg" alt="Иконка входящий поток">
-        <h3  class="to-do__title">Получайте прибыль</h3>
+        <h3 class="to-do__title">Получайте прибыль</h3>
         <p>Имейте стабильный доход и реинвестируйте в акции</p>
       </div>
     </section>
 
     <section class="main-section">
-      <h2 class="heading2">Как работает система</h2>
+      <div class="main-section__heading-wrapper main-section__heading-wrapper--bcg-how-it-work">
+        <h2 class="main-section__heading">Как работает система</h2>
+      </div>
       <div class="how-it-work">
-        <p>
+        <p class="how-it-work__more">
           Пока внимание конкурентов приковано исключительно к разработке эффективных антител,
           аналитики проекта ставят на разработку препаратов по борьбе с осложнениями от заболевания.
           Выбор этого прибыльного направления подтвердил 10-летнюю квалификацию команды и приносит вкладчикам
           ошеломляющие результаты.
         </p>
-        <p>
+        <p class="how-it-work__more">
           Проект VaccInvest - уникален тем, что анализирует больше связанных с индустрией явлений, чем кто-либо другой:
-        </p>
-        <ul>
+        <ul class="how-it-work__list">
           <li>темпы производства и поставок медпрепаратов</li>
           <li>актуальную социальную востребованность</li>
           <li>влияние на внутреннюю экономику и геополитику стран</li>
           <li>покрытие транспортных расходов</li>
         </ul>
+        </p>
       </div>
     </section>
 
     <section class="main-section">
-      <h2 class="heading2">Рассчитайте прибыль от своих инвестиций</h2>
+      <div class="main-section__heading-wrapper main-section__heading-wrapper--bcg-calculate">
+        <h2 class="main-section__heading">Рассчитайте прибыль от своих инвестиций</h2>
+      </div>
       <div class="calculate">
-        <img class="calculate__img" src="#" alt="Лаборанты в лаборатории">
-        <div class="calculae__more">
-          <p class="calculate__about">
-            Чтобы рассчитать потенциальную прибыль от инвестирования в ценные бумаги фармацевтических компаний,
-            укажите начальную сумму инвестиций. Система просчитает возможный доход, учитывая статистические данные.
-          </p>
-          <div class="calculate__action">
-            <label class="calculae__call">Впишите сумму инвестирования
-              <input class="calculate__value" type="text" id="value" name="value" placeholder="200$"></input>
-            </label>
-          </div>
-          <div class="calculate__progress">ProgressBar</div>
-          <div class="calculate__shares">Другие акции</div>
-          <div class="calculate__vaccine">Вакцины</div>
+        <p class="calculate__about">
+          Чтобы рассчитать потенциальную прибыль от инвестирования в ценные бумаги фармацевтических компаний,
+          укажите начальную сумму инвестиций. Система просчитает возможный доход, учитывая статистические данные.
+        </p>
+        <div class="calculate__action">
+          <label class="calculae__call">Впишите сумму инвестирования
+            <input class="calculate__value" type="text" id="value" name="value" placeholder="200$"></input>
+          </label>
         </div>
+        <div class="calculate__progress"></div>
+        <div class="calculate__shares">Другие акции</div>
+        <div class="calculate__vaccine">Вакцины</div>
+        <img class="calculate__img" src="img/laboratory.jpg" width="312" height="262" alt="Лаборанты в лаборатории">
       </div>
     </section>
 
-    <div class="form bottom__form">
-      <h1>Используйте передовые технологии
+    <form class="form form--bottom">
+      <h2 class="form__heading form__heading--center">Используйте передовые технологии
         для анализа рынка и уже сегодня
-        узнайте что выгодно будет продать завтра</h1>
-      <form class="form form--top">
-        <label class="visually-hidden" for="name1">Введите имя ифамилию</label>
-        <input type="text" id="name1" name="name" placeholder="Имя Фамилия">
+        узнайте что выгодно будет продать завтра</h2>
 
-        <label class="visually-hidden" for="tel1">Введите телефон</label>
-        <input type="tel" id="tel1" name="tel" placeholder="Телефон">
+      <label class="visually-hidden" for="name1">Введите имя ифамилию</label>
+      <input type="text" id="name1" name="name" placeholder="Имя Фамилия">
 
-        <label class="visually-hidden" for="email1">Введите email</label>
-        <input type="email" id="email1" name="email1" placeholder="Почта">
+      <label class="visually-hidden" for="tel1">Введите телефон</label>
+      <input type="tel" id="tel1" name="tel" placeholder="Телефон">
 
-        <button class="button button--open-navigation-posotion main-nav__button" type="submit">Начать зарабатывать
-          <img src="img/iconArrowButton.svg" width="20" height="20" alt="Стрелочка вправо">
-        </button>
-      </form>
-    </div>
+      <label class="visually-hidden" for="email1">Введите email</label>
+      <input type="email" id="email1" name="email1" placeholder="Почта">
 
+      <button class="button button--open-navigation-posotion main-nav__button" type="submit">Начать зарабатывать
+        <img src="img/iconArrowButton.svg" width="20" height="20" alt="Стрелочка вправо">
+      </button>
+    </form>
   </main>
 
   <footer class="footer">
@@ -282,15 +283,16 @@
       <h3 class="copyrightl__title visually-hidden">Copyright</h3>
       <div class="logo">
         <img class="logo__img" src="img/logo.png" width="35" height="35" alt="VaccInvest логотип">
-        <P>VaccInvest</P>
+        <p class="logo__name logo__name--fs22-lh24">VaccInvest</p>
       </div>
+      <p class="copyright__data">©2021 All rights Reserved</p>
     </section>
 
     <section class="terms-and-policy">
       <h3 class="terms-and-policy__title visually-hidden">Политика и условия</h3>
       <ul class="terms-and-policy__list">
-        <li class="terms-and-policy__item">Политика конфедициальности</li>
-        <li class="terms-and-policy__item">Условия и положения</li>
+        <li class="terms-and-policy__item"><a href="#">Политика конфедициальности</a></li>
+        <li class="terms-and-policy__item"><a href="#">Условия и положения</a></li>
       </ul>
     </section>
   </footer>

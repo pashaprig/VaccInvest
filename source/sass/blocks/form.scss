@@ -2,6 +2,26 @@
   display: flex;
   flex-direction: column;
   padding: 16px;
+
+  &--bottom {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: 24px;
+    background: url("../../img/formBottom.jpg") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.form__heading {
+  margin-bottom: 16px;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 32px;
+  color: $basic-white;
+
+  &--center {
+    text-align: center;
+  }
 }
 
 .form input {

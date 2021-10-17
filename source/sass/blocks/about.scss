@@ -4,6 +4,11 @@
   align-items: center;
 }
 
+.about__shares {
+  padding-left: 10px;
+  border-left: 1px dashed $block-border;
+}
+
 .about__img {
   margin-bottom: 10px;
 }

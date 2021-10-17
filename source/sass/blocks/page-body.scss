@@ -1,12 +1,12 @@
 .page-body {
   max-width: 1920px;
   margin: 0 auto;
-  padding-bottom: 80px;
+  padding-bottom: 24px;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 32px;
-  color: $nav-black;
+  color: $text-black;
 
   @media (min-width: $desktop-width) {
     padding-bottom: 54px;

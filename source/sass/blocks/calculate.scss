@@ -1,0 +1,48 @@
+.calculate {
+  margin-left: 15px;
+}
+
+.calculate__about {
+  margin-left: -17px;
+  padding-left: 16px;
+  margin-bottom: 30px;
+  border-left: 1px dashed $block-border;
+}
+
+.calculae__call {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.calculate__value {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  padding: 12px 24px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  border: 1px solid $calculate-input-border;
+  border-radius: 300px 300px 300px 300px;
+  background-color: inherit;
+  color: $calculate-input-color;
+
+
+  &::placeholder {
+    color: $calculate-input-color;
+  }
+}
+
+.calculate__progress {
+  width: 100%;
+  min-height: 25px;
+  padding-bottom: 8px;
+  background: url("../../img/calculateProgress.png") no-repeat;
+  border-bottom: 1px dashed $vaccine-border;
+}
+
+.calculate__img {
+  margin-top: 32px;
+  margin-bottom: 50px;
+}
