@@ -5,10 +5,15 @@
   justify-content: flex-start;
   min-height: 37px;
   margin-bottom: 28px;
-  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.15);
+  padding-left: 24px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
 
   @media (min-width: $desktop-width) {
-    justify-content: space-around;
-    min-height: 100px;
+    justify-content: space-between;
+    min-height: 94px;
+    margin-right: 64px;
+    margin-left: 64px;
+    padding-left: 0;
+    box-shadow: none;
   }
 }
