@@ -2,6 +2,12 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+  }
 }
 
 .to-do img {
