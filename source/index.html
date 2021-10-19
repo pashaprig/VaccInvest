@@ -63,7 +63,8 @@
           <input type="email" id="email1" name="email1" placeholder="Почта">
         </div>
 
-        <button class="button button--open-navigation-posotion button--desktop-w275 main-nav__button" type="submit">Начать зарабатывать
+        <button class="button button--open-navigation-posotion button--desktop-w275 main-nav__button"
+          type="submit">Начать зарабатывать
           <img src="img/iconArrowButton.svg" width="20" height="20" alt="Стрелочка вправо">
         </button>
       </form>
@@ -97,24 +98,29 @@
       <div class="main-section__heading-wrapper main-section__heading-wrapper--bcg-about">
         <h2 class="main-section__heading">О проекте</h2>
       </div>
+
       <div class="about">
-        <img class="about__img" src="img/chart.svg" width="300" height="302" alt="Силует планеты Земля">
-        <h3 class="about__title"><span>3,5&nbsp;млрд</span><br>вакцинировалось</h3>
-        <p class="about__info">Каждый день вакцинируются около <b>10&nbsp;-&nbsp;100&nbsp;тыс</b></p>
-      </div>
-      <div class="about__shares">
-        <p class="about__more about__more--first">
-          Акции производителей самых эффективных вакцин дорожают каждый день пандемии.
-          Вложения в ценные бумаги крупнейших фармакологических компаний обеспечивают сотням инвесторов стабильный
-          доход.
-        </p>
-        <p class="about__more">
-          Главное преимущество VaccInvest&nbsp;— возможность анализировать движение котировок на рынке,
-          а также определять спрос на отдельные виды вакцины. Использование передовых технологий помогает определить,
-          на какую вакцину вскоре поднимется спрос, а какая может потерять популярность.
-          Используя данные фундаментального и технического анализа,
-          участники проекта инвестируют в самые востребованные акции и зарабатывают на колебаниях курса.
-        </p>
+        <div class="about__wrapper">
+          <img class="about__img" src="img/chart.svg" width="300" height="302" alt="Силует планеты Земля">
+          <h3 class="about__title"><span>3,5&nbsp;млрд</span><br>вакцинировалось</h3>
+          <p class="about__info">Каждый день вакцинируются около <b>10&nbsp;-&nbsp;100&nbsp;тыс</b></p>
+        </div>
+        <div class="about__wrapper about__wrapper--dashed">
+          <p class="about__more about__more--first">
+            Акции производителей самых эффективных вакцин дорожают каждый день пандемии.
+            Вложения в ценные бумаги крупнейших фармакологических компаний обеспечивают сотням инвесторов стабильный
+            доход.
+          </p>
+        </div>
+        <div class="about__wrapper about__wrapper--dashed">
+          <p class="about__more">
+            Главное преимущество VaccInvest&nbsp;— возможность анализировать движение котировок на рынке,
+            а также определять спрос на отдельные виды вакцины. Использование передовых технологий помогает определить,
+            на какую вакцину вскоре поднимется спрос, а какая может потерять популярность.
+            Используя данные фундаментального и технического анализа,
+            участники проекта инвестируют в самые востребованные акции и зарабатывают на колебаниях курса.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -141,53 +147,56 @@
       <div class="main-section__heading-wrapper main-section__heading-wrapper--bcg-currency">
         <h2 class="main-section__heading">Актуальный курс</h2>
       </div>
-      <div class="currency">
-        <div class="currency__about">
-          <img class="currency__img" src="img/pfizer.svg" width="40" height="24" alt="Логотип Pfizer"></img>
-          <span class="currency__name">Pfizer</span>
-          <span class="currency__percent">$50.42</span>
-        </div>
-        <div class="currency__dynamic">
-          <span>1.51%</span>
-        </div>
-      </div>
 
-      <div class="currency">
-        <div class="currency__about">
-          <img class="currency__img" src="img/astraZeneca.svg" width="94" height="24" alt="Логотип AstraZeneca"></img>
-          <span class="currency__name">AstraZeneca</span>
-          <span class="currency__percent">$59.35</span>
+      <div class="currency__wrapper">
+        <div class="currency">
+          <div class="currency__about">
+            <img class="currency__img" src="img/pfizer.svg" width="40" height="24" alt="Логотип Pfizer"></img>
+            <span class="currency__name">Pfizer</span>
+            <span class="currency__percent">$50.42</span>
+          </div>
+          <div class="currency__dynamic">
+            <span>1.51%</span>
+          </div>
         </div>
-        <div class="currency__dynamic">
-          <span>1.02%</span>
-        </div>
-      </div>
 
-      <div class="currency">
-        <div class="currency__about">
-          <img class="currency__img" src="img/moderna.svg" width="74" height="17" alt="Логотип Moderna"></img>
-          <span class="currency__name">Moderna</span>
-          <span class="currency__percent">$401.86</span>
+        <div class="currency">
+          <div class="currency__about">
+            <img class="currency__img" src="img/astraZeneca.svg" width="94" height="24" alt="Логотип AstraZeneca"></img>
+            <span class="currency__name">AstraZeneca</span>
+            <span class="currency__percent">$59.35</span>
+          </div>
+          <div class="currency__dynamic">
+            <span>1.02%</span>
+          </div>
         </div>
-        <div class="currency__dynamic">
-          <span>32.17%</span>
-        </div>
-      </div>
 
-      <div class="currency">
-        <div class="currency__about">
-          <img class="currency__img" src="img/johnson&johnson.svg" width="120" height="24"
-            alt="Логотип Johnson & Johnson"></img>
-          <span class="currency__name">Johnson & Johnson</span>
-          <span class="currency__percent">$179.47</span>
+        <div class="currency">
+          <div class="currency__about">
+            <img class="currency__img" src="img/moderna.svg" width="74" height="17" alt="Логотип Moderna"></img>
+            <span class="currency__name">Moderna</span>
+            <span class="currency__percent">$401.86</span>
+          </div>
+          <div class="currency__dynamic">
+            <span>32.17%</span>
+          </div>
         </div>
-        <div class="currency__dynamic currency__dynamic--red">
-          <span>0.01%</span>
+
+        <div class="currency">
+          <div class="currency__about">
+            <img class="currency__img" src="img/johnson&johnson.svg" width="120" height="24"
+              alt="Логотип Johnson & Johnson"></img>
+            <span class="currency__name">Johnson & Johnson</span>
+            <span class="currency__percent">$179.47</span>
+          </div>
+          <div class="currency__dynamic currency__dynamic--red">
+            <span>0.01%</span>
+          </div>
         </div>
       </div>
 
       <div class="currency__graph">
-        <img src="img/graph.png" width="312" height="344" alt="График с курсом акций"></img>
+        <img src="img/graph.svg" width="328" height="360" alt="График с курсом акций"></img>
       </div>
     </section>
 
@@ -265,21 +274,23 @@
     </section>
 
     <form class="form form--bottom">
-      <h2 class="form__heading form__heading--center">Используйте передовые технологии для анализа рынка и зарабатывайте уже сегодня на том,
+      <h2 class="form__heading form__heading--center">Используйте передовые технологии для анализа рынка и зарабатывайте
+        уже сегодня на том,
         что будет популярно завтра</h2>
 
-        <div class="form__wrapper">
-          <label class="visually-hidden" for="name1">Введите имя и фамилию</label>
-          <input type="text" id="name1" name="name" placeholder="Имя Фамилия">
+      <div class="form__wrapper">
+        <label class="visually-hidden" for="name1">Введите имя и фамилию</label>
+        <input type="text" id="name1" name="name" placeholder="Имя Фамилия">
 
-          <label class="visually-hidden" for="tel1">Введите телефон</label>
-          <input type="tel" id="tel1" name="tel" placeholder="Телефон">
+        <label class="visually-hidden" for="tel1">Введите телефон</label>
+        <input type="tel" id="tel1" name="tel" placeholder="Телефон">
 
-          <label class="visually-hidden" for="email1">Введите email</label>
-          <input type="email" id="email1" name="email1" placeholder="Почта">
-        </div>
+        <label class="visually-hidden" for="email1">Введите email</label>
+        <input type="email" id="email1" name="email1" placeholder="Почта">
+      </div>
 
-      <button class="button button--open-navigation-posotion button--desktop-w303-center main-nav__button" type="submit">Начать зарабатывать
+      <button class="button button--open-navigation-posotion button--desktop-w303-center main-nav__button"
+        type="submit">Начать зарабатывать
         <img src="img/iconArrowButton.svg" width="20" height="20" alt="Стрелочка вправо">
       </button>
     </form>

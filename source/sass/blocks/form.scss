@@ -38,6 +38,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      grid-column: span 3;
       padding-right: 336px;
       padding-left: 336px;
       margin: 0 auto;

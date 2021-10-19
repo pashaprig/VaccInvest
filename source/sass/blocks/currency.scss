@@ -1,10 +1,22 @@
+.currency__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .currency {
   display: flex;
   justify-content: space-between;
   padding: 24px;
   margin-bottom: 16px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+    box-sizing: border-box;
+  }
 }
 
 .currency__about {
@@ -36,6 +48,9 @@
 }
 
 .currency__dynamic {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
   height: 100%;
   padding: 4px 8px;
   font-weight: 700;
@@ -48,6 +63,10 @@
   &--red {
     color: $currencyMinus;
     background: rgba(197, 25, 25, 0.2);
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 32px;
   }
 }
 

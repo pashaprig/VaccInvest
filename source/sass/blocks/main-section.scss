@@ -1,5 +1,9 @@
 .main-section {
   margin-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: span 3;
+  }
 }
 
 .main-section__heading-wrapper {
@@ -32,44 +36,44 @@
   &--bcg-vaccine {
     min-height: 112px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../../img/vaccine.jpg") no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
   }
 
   &--bcg-about {
     min-height: 48px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../../img/abuot.jpg") no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
   }
 
   &--bcg-achievements {
     min-height: 80px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
       url("../../img/achievements.jpg") no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
   }
 
   &--bcg-currency {
     min-height: 48px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../../img/currency.jpg") no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
   }
 
   &--bcg-to-do {
     min-height: 80px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../../img/to-do.jpg") no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
   }
 
   &--bcg-how-it-work {
     min-height: 48px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../../img/how-it-work.jpg") no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
   }
 
   &--bcg-calculate {
     min-height: 80px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../../img/calculate.jpg") no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
   }
 
   @media (min-width: $desktop-width) {

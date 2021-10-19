@@ -1,11 +1,18 @@
 .vaccine {
   border-left: 0.5px dashed $vaccine-border;
 
-  &::before {
-    display: flex;
-    align-items: row;
-    content: "";
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+    border-left: none;
   }
+
+  // &::before {
+  //   display: flex;
+  //   align-items: row;
+  //   content: "";
+  // }
 }
 
 .vaccine__wrapper {

@@ -1,12 +1,24 @@
 .about {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+  }
+}
+
+.about__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-.about__shares {
-  padding-left: 10px;
-  border-left: 1px dashed $block-border;
+  &--dashed {
+    padding-left: 10px;
+    border-left: 1px dashed $block-border;
+
+    @media (min-width: $desktop-width) {
+      border: none;
+    }
+  }
 }
 
 .about__img {
@@ -33,10 +45,6 @@
   text-align: center;
   line-height: 24px;
 }
-
-// .about__more-wrapper {
-//   border-left: 0.5px dashed $vaccine-border;
-// }
 
 .about__more {
   &--first {
