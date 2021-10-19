@@ -71,4 +71,11 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../../img/calculate.jpg") no-repeat;
     background-size: 100% 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    display: inline-flex;
+    min-height: 64px;
+    padding: 8px;
+    background: none;
+  }
 }
