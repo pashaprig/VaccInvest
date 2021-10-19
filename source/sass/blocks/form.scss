@@ -28,7 +28,30 @@
     padding-bottom: 32px;
     margin-bottom: 24px;
     background: url("../../img/formBottom.jpg") no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    border-radius: 20px;
+
+    & .form__wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 336px;
+      padding-left: 336px;
+      margin: 0 auto;
+      background: url("../../img/formBottomDesktop.jpg") no-repeat;
+      background-size: cover;
+
+      & .form__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        min-width: 303px;
+      }
+    }
   }
 }
 
