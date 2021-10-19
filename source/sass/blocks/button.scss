@@ -12,4 +12,10 @@
   border-radius: 5px;
   color: $text-black;
   border: none;
+
+  @media (min-width: $desktop-width) {
+    &--desktop-w275 {
+      width: 275px;
+    }
+  }
 }

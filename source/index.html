@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>VaccInvest</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="icon" href="ico/favicon.ico">
+  <link rel="icon" href="./ico/favicon.ico">
   <!-- <link rel="icon" href="img/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/180.png"> -->
   <!-- <link rel="manifest" href="ico/manifest.webmanifest"> -->
@@ -47,17 +47,23 @@
       </div>
 
       <form class="form form--top">
-        <h1 class="form__heading">Получайте стабильные дивиденды от 80% в&nbsp;месяц</h1>
-        <label class="visually-hidden" for="name1">Введите имя и фамилию</label>
-        <input type="text" id="name1" name="name" placeholder="Имя Фамилия">
+        <h1 class="form__heading form__heading--mobile">Получайте стабильные дивиденды от 80% в&nbsp;месяц</h1>
+        <h1 class="form__heading form__heading--desktop">Инвестируйте в акции медицинских компаний и получайте
+          стабильные дивиденды
+          от&nbsp;80% в&nbsp;месяц</h1>
 
-        <label class="visually-hidden" for="tel1">Введите телефон</label>
-        <input type="tel" id="tel1" name="tel" placeholder="Телефон">
+        <div class="form__wrapper">
+          <label class="visually-hidden" for="name1">Введите имя и фамилию</label>
+          <input type="text" id="name1" name="name" placeholder="Имя Фамилия">
 
-        <label class="visually-hidden" for="email1">Введите email</label>
-        <input type="email" id="email1" name="email1" placeholder="Почта">
+          <label class="visually-hidden" for="tel1">Введите телефон</label>
+          <input type="tel" id="tel1" name="tel" placeholder="Телефон">
 
-        <button class="button button--open-navigation-posotion main-nav__button" type="submit">Начать зарабатывать
+          <label class="visually-hidden" for="email1">Введите email</label>
+          <input type="email" id="email1" name="email1" placeholder="Почта">
+        </div>
+
+        <button class="button button--open-navigation-posotion button--desktop-w275 main-nav__button" type="submit">Начать зарабатывать
           <img src="img/iconArrowButton.svg" width="20" height="20" alt="Стрелочка вправо">
         </button>
       </form>
