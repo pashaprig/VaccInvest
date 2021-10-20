@@ -70,6 +70,8 @@
   }
 }
 
-.currency__graph img {
-  width: 100%;
+.currency__graph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,5 +1,30 @@
 .calculate {
   margin-left: 15px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+    margin-left: 0;
+  }
+}
+
+.calculate__wrapper {
+  &--about {
+    @media (min-width: $desktop-width) {
+      grid-column: span 2;
+    }
+  }
+
+  &--img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    @media (min-width: $desktop-width) {
+      order: -1;
+    }
+  }
 }
 
 .calculate__about {
@@ -7,6 +32,12 @@
   padding-left: 16px;
   margin-bottom: 30px;
   border-left: 1px dashed $block-border;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
 }
 
 .calculae__call {
@@ -41,11 +72,13 @@
   min-height: 25px;
   padding-bottom: 8px;
   background: url("../../img/calculateProgress.png") no-repeat;
+  background-size: contain;
   border-bottom: 1px dashed $vaccine-border;
 }
 
 .calculate__img {
   width: 100%;
-  margin-top: 32px;
-  margin-bottom: 50px;
+  max-width: 400px;
+  object-fit: cover;
+  border-radius: 10px;
 }

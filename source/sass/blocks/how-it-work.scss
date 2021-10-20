@@ -1,6 +1,21 @@
 .how-it-work {
   padding-left: 10px;
   border-left: 1px dashed $block-border;
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 28px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-left: none;
+    border-radius: 20px;
+  }
+}
+
+.how-it-work__heading {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
 }
 
 .how-it-work__more {

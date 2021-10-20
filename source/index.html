@@ -229,11 +229,14 @@
       </div>
     </section>
 
-    <section class="main-section">
-      <div class="main-section__heading-wrapper main-section__heading-wrapper--bcg-how-it-work">
+    <section class="main-section main-section--desktop-bcg">
+      <div class="main-section__heading-wrapper main-section__heading-wrapper--bcg-how-it-work main-section__heading-wrapper--desktop-none">
         <h2 class="main-section__heading">Как работает система</h2>
       </div>
       <div class="how-it-work">
+
+        <h2 class="main-section__heading how-it-work__heading">Как работает система</h2>
+
         <p class="how-it-work__more">
           Пока внимание конкурентов приковано исключительно к разработке эффективных антител,
           аналитики проекта ставят на разработку препаратов по борьбе с осложнениями от заболевания.
@@ -257,19 +260,25 @@
         <h2 class="main-section__heading">Рассчитайте прибыль от своих инвестиций</h2>
       </div>
       <div class="calculate">
-        <p class="calculate__about">
-          Чтобы рассчитать потенциальную прибыль от инвестирования в ценные бумаги фармацевтических компаний,
-          укажите начальную сумму инвестиций. Система просчитает возможный доход, учитывая статистические данные.
-        </p>
-        <div class="calculate__action">
-          <label class="calculae__call">Впишите сумму инвестирования
-            <input class="calculate__value" type="text" id="value" name="value" placeholder="200$"></input>
-          </label>
+        <div class="calculate__wrapper calculate__wrapper--about">
+          <p class="calculate__about">
+            Чтобы рассчитать потенциальную прибыль от инвестирования в ценные бумаги фармацевтических компаний,
+            укажите начальную сумму инвестиций. Система просчитает возможный доход, учитывая статистические данные.
+          </p>
+          <div class="calculate__action">
+            <label class="calculae__call">Впишите сумму инвестирования
+              <input class="calculate__value" type="text" id="value" name="value" placeholder="200$"></input>
+            </label>
+          </div>
+          <div class="calculate__progress"></div>
+          <div class="calculate__shares">Другие акции</div>
+          <div class="calculate__vaccine">Вакцины</div>
         </div>
-        <div class="calculate__progress"></div>
-        <div class="calculate__shares">Другие акции</div>
-        <div class="calculate__vaccine">Вакцины</div>
-        <img class="calculate__img" src="img/laboratory.jpg" width="312" height="262" alt="Лаборанты в лаборатории">
+
+        <div class="calculate__wrapper calculate__wrapper--img">
+          <img class="calculate__img" src="img/laboratory.jpg" width="320" height="262" alt="Лаборанты в лаборатории">
+        </div>
+
       </div>
     </section>
 
