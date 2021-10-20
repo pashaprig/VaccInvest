@@ -18,7 +18,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding-left: 8px;
+  padding: 8px;
   margin-bottom: 25px;
   color: $basic-white;
   box-sizing: border-box;
@@ -42,7 +42,7 @@
   }
 
   &--bcg-vaccine {
-    min-height: 112px;
+    min-height: 48px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../../img/vaccine.jpg") no-repeat;
     background-size: cover;
   }
@@ -54,7 +54,7 @@
   }
 
   &--bcg-achievements {
-    min-height: 80px;
+    min-height: 48px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
       url("../../img/achievements.jpg") no-repeat;
     background-size: cover;
@@ -67,7 +67,7 @@
   }
 
   &--bcg-to-do {
-    min-height: 80px;
+    min-height: 48px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../../img/to-do.jpg") no-repeat;
     background-size: cover;
   }
@@ -80,7 +80,7 @@
   }
 
   &--bcg-calculate {
-    min-height: 80px;
+    min-height: 48px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
       url("../../img/calculate.jpg") no-repeat;
     background-size: cover;
