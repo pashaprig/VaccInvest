@@ -6,10 +6,13 @@
 
     &--desktop-bcg {
       padding: 64px 120px 80px;
-      background: url("../../img/how-it-workBackground.jpg") no-repeat;
-      background-color: $how-it-workBackground;
+      background: url("../../img/how-it-workBackground.jpg") no-repeat $how-it-workBackground;
       background-size: cover;
       border-radius: 20px;
+
+      @media (min-resolution: 1dppx) {
+        background: url("../../img/how-it-workBackground@2x.jpg") no-repeat $how-it-workBackground;
+      }
     }
   }
 }
