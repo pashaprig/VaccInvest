@@ -5,11 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>VaccInvest</title>
+  <meta name="description" content="Инвестируйте в акции медицинских компаний и получайте
+  стабильные дивиденды">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="icon" href="./ico/favicon.ico">
-  <!-- <link rel="icon" href="img/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/180.png"> -->
-  <!-- <link rel="manifest" href="ico/manifest.webmanifest"> -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <!-- <link rel="preload" href="./fonts/Raleway-Medium.woff2" as="font"> -->
 </head>
 
@@ -31,7 +32,10 @@
 
       <a class="button button--main-nav main-nav__button" href="#">Начать зарабатывать
         <!--main-nav__button - скрывает при закрытом меню на мобилке кнопку-->
-        <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.93 2.93a9.998 9.998 0 0 1 14.141 0 9.998 9.998 0 0 1 0 14.14 9.998 9.998 0 0 1-14.141 0 9.998 9.998 0 0 1 0-14.14ZM6.2 7.846l4.217-.088-5.206 5.206c-.38.38-.38.99 0 1.369l.456.456c.38.379.99.379 1.368 0l5.206-5.206-.088 4.216a.969.969 0 0 0 .966.99l.625-.003c.536 0 .97-.434.966-.967l.003-7.563a.964.964 0 0 0-.966-.967l-7.57-.003a.964.964 0 0 0-.966.967l-.003.624c.003.545.45.98.992.97Z" fill="#333"/>
+        <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M2.93 2.93a9.998 9.998 0 0 1 14.141 0 9.998 9.998 0 0 1 0 14.14 9.998 9.998 0 0 1-14.141 0 9.998 9.998 0 0 1 0-14.14ZM6.2 7.846l4.217-.088-5.206 5.206c-.38.38-.38.99 0 1.369l.456.456c.38.379.99.379 1.368 0l5.206-5.206-.088 4.216a.969.969 0 0 0 .966.99l.625-.003c.536 0 .97-.434.966-.967l.003-7.563a.964.964 0 0 0-.966-.967l-7.57-.003a.964.964 0 0 0-.966.967l-.003.624c.003.545.45.98.992.97Z"
+            fill="#333" />
         </svg>
       </a>
 
@@ -44,7 +48,11 @@
   <main class="page-main">
     <section class="hero">
       <div class="hero__img">
-        <img src="img/hero.jpg" width="328" height="184" alt="Лаборант держит пробирку">
+        <picture>
+          <source type="image/webp" srcset="img/hero.webp 1x, img/hero@2x.webp 2x">
+          <img class="" src="img/hero.jpg" srcset="img/hero@2x.jpg 2x" width="328" height="184" alt="Лаборант держит пробирку">
+        </picture>
+
       </div>
 
       <form class="form form--top">
@@ -66,7 +74,10 @@
 
         <button class="button button--open-navigation-posotion button--desktop-w275 main-nav__button"
           type="submit">Начать зарабатывать
-          <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.93 2.93a9.998 9.998 0 0 1 14.141 0 9.998 9.998 0 0 1 0 14.14 9.998 9.998 0 0 1-14.141 0 9.998 9.998 0 0 1 0-14.14ZM6.2 7.846l4.217-.088-5.206 5.206c-.38.38-.38.99 0 1.369l.456.456c.38.379.99.379 1.368 0l5.206-5.206-.088 4.216a.969.969 0 0 0 .966.99l.625-.003c.536 0 .97-.434.966-.967l.003-7.563a.964.964 0 0 0-.966-.967l-7.57-.003a.964.964 0 0 0-.966.967l-.003.624c.003.545.45.98.992.97Z" fill="#333"/>
+          <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.93 2.93a9.998 9.998 0 0 1 14.141 0 9.998 9.998 0 0 1 0 14.14 9.998 9.998 0 0 1-14.141 0 9.998 9.998 0 0 1 0-14.14ZM6.2 7.846l4.217-.088-5.206 5.206c-.38.38-.38.99 0 1.369l.456.456c.38.379.99.379 1.368 0l5.206-5.206-.088 4.216a.969.969 0 0 0 .966.99l.625-.003c.536 0 .97-.434.966-.967l.003-7.563a.964.964 0 0 0-.966-.967l-7.57-.003a.964.964 0 0 0-.966.967l-.003.624c.003.545.45.98.992.97Z"
+              fill="#333" />
           </svg>
         </button>
       </form>
@@ -78,22 +89,30 @@
         <h2 class="main-section__heading">Доходность исследований за&nbsp;2021&nbsp;год</h2>
       </div>
       <div class="vaccine">
-        <div class="vaccine__wrapper">
-          <img src="img/moderna.svg" width="74" height="17" alt="Логотип Moderna"></img>
-          <div class="vaccine__name vaccine__name--first">Moderna</div>
-          <div class="vaccine__percent">+313.1%</div>
+        <div class="vaccine__bar">
+          <img src="img/vaccine.png" width="28" height="449" alt="Статус бар">
         </div>
-        <div class="vaccine__wrapper">
-          <img src="img/astraZeneca.svg" width="94" height="24" alt="Логотип AstraZeneca"></img>
-          <div class="vaccine__name vaccine__name--second">AstraZeneca</div>
-          <div class="vaccine__percent">+286.8%</div>
-        </div>
-        <div class="vaccine__wrapper">
-          <img src="img/pfizer.svg" width="40" height="24" alt="Логотип Pfizer"></img>
-          <div class="vaccine__name vaccine__name--third">Pfizer</div>
-          <div class="vaccine__percent">+218.4%</div>
+
+        <div class="vaccine__groupe">
+          <div class="vaccine__wrapper">
+            <img src="img/moderna.svg" width="74" height="17" alt="Логотип Moderna"></img>
+            <div class="vaccine__name vaccine__name--first">Moderna</div>
+            <div class="vaccine__percent">+313.1%</div>
+          </div>
+          <div class="vaccine__wrapper">
+            <img src="img/astraZeneca.svg" width="94" height="24" alt="Логотип AstraZeneca"></img>
+            <div class="vaccine__name vaccine__name--second">AstraZeneca</div>
+            <div class="vaccine__percent">+286.8%</div>
+          </div>
+          <div class="vaccine__wrapper">
+            <img src="img/pfizer.svg" width="40" height="24" alt="Логотип Pfizer"></img>
+            <div class="vaccine__name vaccine__name--third">Pfizer</div>
+            <div class="vaccine__percent">+218.4%</div>
+          </div>
         </div>
       </div>
+
+
     </section>
 
     <section class="main-section">
@@ -132,15 +151,33 @@
       </div>
       <div class="achievements">
         <div class="achievements__img">
-          <img src="img/newsBlock1.png" width="311" height="296" alt="Новость с 'Экономическая правда'">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/newsBlock1Desktop.webp 1x, img/newsBlock1Desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/newsBlock1.webp 1x, img/newsBlock1@2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/newsBlock1Desktop.jpg 1x, img/newsBlock1Desktop@2x.jpg 2x">
+            <img class="" src="img/newsBlock1.jpg" srcset="img/newsBlock1@2x.jpg 2x" width="311" height="296" alt="Новость 'Экономическая правда'">
+          </picture>
         </div>
 
         <div class="achievements__img">
-          <img src="img/newsBlock2.png" alt="Новость с 'Лига.Нет'">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/newsBlock2Desktop.webp 1x, img/newsBlock2Desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/newsBlock2.webp 1x, img/newsBlock2@2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/newsBlock2Desktop.jpg 1x, img/newsBlock2Desktop@2x.jpg 2x">
+            <img class="" src="img/newsBlock2.jpg" srcset="img/newsBlock2@2x.jpg 2x" width="311" height="408" alt="Новость 'Лига.Нет'">
+          </picture>
         </div>
 
         <div class="achievements__img">
-          <img src="img/newsBlock3.png" alt="Новость с 'РБК'">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/newsBlock3Desktop.webp 1x, img/newsBlock3Desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/newsBlock3.webp 1x, img/newsBlock3@2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/newsBlock3Desktop.jpg 1x, img/newsBlock3Desktop@2x.jpg 2x">
+            <img class="" src="img/newsBlock3.jpg" srcset="img/newsBlock3@2x.jpg 2x" width="311" height="492" alt="Новость 'РБК'">
+          </picture>
         </div>
       </div>
     </section>
@@ -150,8 +187,8 @@
         <h2 class="main-section__heading">Актуальный курс</h2>
       </div>
 
-      <div class="currency__wrapper">
-        <div class="currency">
+      <div class="currency">
+        <div class="currency__wrapper">
           <div class="currency__about">
             <img class="currency__img" src="img/pfizer.svg" width="40" height="24" alt="Логотип Pfizer"></img>
             <span class="currency__name">Pfizer</span>
@@ -162,7 +199,7 @@
           </div>
         </div>
 
-        <div class="currency">
+        <div class="currency__wrapper">
           <div class="currency__about">
             <img class="currency__img" src="img/astraZeneca.svg" width="94" height="24" alt="Логотип AstraZeneca"></img>
             <span class="currency__name">AstraZeneca</span>
@@ -173,7 +210,7 @@
           </div>
         </div>
 
-        <div class="currency">
+        <div class="currency__wrapper">
           <div class="currency__about">
             <img class="currency__img" src="img/moderna.svg" width="74" height="17" alt="Логотип Moderna"></img>
             <span class="currency__name">Moderna</span>
@@ -184,7 +221,7 @@
           </div>
         </div>
 
-        <div class="currency">
+        <div class="currency__wrapper">
           <div class="currency__about">
             <img class="currency__img" src="img/johnson&johnson.svg" width="120" height="24"
               alt="Логотип Johnson & Johnson"></img>
@@ -198,7 +235,12 @@
       </div>
 
       <div class="currency__graph">
-        <img src="img/graph.png" width="328" height="360" alt="График с курсом акций"></img>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/graphDesktop.svg">
+          <img class="currency__table" src="img/graph.svg" width="328" height="360" alt="График с курсом акций">
+        </picture>
+
+        <!-- <img src="img/graph.svg" width="328" height="360" alt="График с курсом акций"></img> -->
       </div>
     </section>
 
@@ -232,7 +274,8 @@
     </section>
 
     <section class="main-section main-section--desktop-bcg">
-      <div class="main-section__heading-wrapper main-section__heading-wrapper--bcg-how-it-work main-section__heading-wrapper--desktop-none">
+      <div
+        class="main-section__heading-wrapper main-section__heading-wrapper--bcg-how-it-work main-section__heading-wrapper--desktop-none">
         <h2 class="main-section__heading">Как работает система</h2>
       </div>
       <div class="how-it-work">
@@ -302,7 +345,10 @@
 
       <button class="button button--open-navigation-posotion button--desktop-w303-center main-nav__button"
         type="submit">Начать зарабатывать
-        <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.93 2.93a9.998 9.998 0 0 1 14.141 0 9.998 9.998 0 0 1 0 14.14 9.998 9.998 0 0 1-14.141 0 9.998 9.998 0 0 1 0-14.14ZM6.2 7.846l4.217-.088-5.206 5.206c-.38.38-.38.99 0 1.369l.456.456c.38.379.99.379 1.368 0l5.206-5.206-.088 4.216a.969.969 0 0 0 .966.99l.625-.003c.536 0 .97-.434.966-.967l.003-7.563a.964.964 0 0 0-.966-.967l-7.57-.003a.964.964 0 0 0-.966.967l-.003.624c.003.545.45.98.992.97Z" fill="#333"/>
+        <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M2.93 2.93a9.998 9.998 0 0 1 14.141 0 9.998 9.998 0 0 1 0 14.14 9.998 9.998 0 0 1-14.141 0 9.998 9.998 0 0 1 0-14.14ZM6.2 7.846l4.217-.088-5.206 5.206c-.38.38-.38.99 0 1.369l.456.456c.38.379.99.379 1.368 0l5.206-5.206-.088 4.216a.969.969 0 0 0 .966.99l.625-.003c.536 0 .97-.434.966-.967l.003-7.563a.964.964 0 0 0-.966-.967l-7.57-.003a.964.964 0 0 0-.966.967l-.003.624c.003.545.45.98.992.97Z"
+            fill="#333" />
         </svg>
       </button>
     </form>

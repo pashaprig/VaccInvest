@@ -19,6 +19,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
+  background-color: $calculate-input-border;
 
   @media (min-width: $desktop-width) {
     width: 640px;

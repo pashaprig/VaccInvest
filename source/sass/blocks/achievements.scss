@@ -17,5 +17,17 @@
 
   &:last-child {
     margin-bottom: 0;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 32px;
+    }
+  }
+
+  & img {
+    background-color: $calculate-input-border;
+
+    @media (min-width: $desktop-width) {
+      height: 348px;
+    }
   }
 }
