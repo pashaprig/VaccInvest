@@ -1,52 +1,11 @@
-// class Tabs{
-//   constructor(){
-//     this.tabList = document.querySelectorAll('.places-tab__tabItem');
-//     this.contentList = document.querySelectorAll('.places-tab__contentItem');
-//     let nav = document.querySelector('.places-tab');
+//Mobile nav
 
-//     nav.addEventListener('click', e => this.show(e));
-
-//     this.setIndex();
-//   }
-
-//   show(e){
-//     let t = e.target;
-//     if (!t.classList.contains('places-tab__tabItem')) return;
-//     this.removePrev();
-
-//     let index = t.getAttribute('data-index');
-//     let content = document.querySelector('.places-tab__contentItem[data-index="'+index+'"]');
-
-//     t.classList.add('places-tab__tabItem--active');
-//     content.classList.add('places-tab__contentItem--active');
-//   }
-
-//   setIndex(){
-//     for (let i = 0; i < this.tabList.length; i++){
-//       this.tabList[i].setAttribute('data-index', i);
-//       this.contentList[i].setAttribute('data-index', i);
-//     }
-//   }
-
-//   removePrev(){
-//     for (let i = 0; i < this.tabList.length; i++){
-//       this.tabList[i].classList.remove('places-tab__tabItem--active');
-//       this.contentList[i].classList.remove('places-tab__contentItem--active');
-//     }
-//   }
-
-// }
-
-// document.addEventListener('DOMContentLoaded', ()=>{
-//   let tabs = new Tabs();
-// })
-
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
+const navMain = document.querySelector('.main-nav');
+const navToggle = document.querySelector('.main-nav__toggle');
 
 navMain.classList.remove('main-nav--nojs');
 
-navToggle.addEventListener('click', function() {
+navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
@@ -55,3 +14,31 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+
+//Calculate profit
+
+const dark = document.querySelector('.calculate__profit--dark');
+const blue = document.querySelector('.calculate__profit--blue');
+const calculateValue = document.querySelector('#value');
+
+const calculateProfit = () => {
+  dark.textContent = calculateValue.value * 1 + '$';
+  blue.textContent = calculateValue.value * 4 + '$';
+  witdh = dark.offsetWidth;
+  const doubleWidth = witdh * 2
+  dark.style.padding = '5px';
+  blue.style.padding = '5px';
+  blue.style.width = doubleWidth + 'px';
+}
+
+calculateValue.addEventListener('input', function () {
+
+  if (calculateValue.value.length < 7) {
+    calculateProfit()
+  } else {
+    calculateValue.value = 1000000
+    calculateProfit()
+  }
+})
+
