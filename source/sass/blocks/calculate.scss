@@ -91,3 +91,23 @@
   border-radius: 10px;
   background-color: $calculate-input-border;
 }
+
+.calculate__result {
+  display: flex;
+  align-items: center;
+}
+
+.calculate__bar {
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  border-radius: 25px 25px 25px 25px;
+
+  &--dark {
+    background-color: $dark;
+  }
+
+  &--blue {
+    background-color: $blue;
+  }
+}

@@ -23,14 +23,14 @@
 
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#">Про проект</a></li>
-        <li class="main-nav__item"><a href="#">Статистика</a></li>
-        <li class="main-nav__item"><a href="#">Акции</a></li>
-        <li class="main-nav__item"><a href="#">Калькулятор</a></li>
-        <li class="main-nav__item"><a href="#">Преимущества</a></li>
+        <li class="main-nav__item"><a href="#about">Про проект</a></li>
+        <li class="main-nav__item"><a href="#vaccine">Статистика</a></li>
+        <li class="main-nav__item"><a href="#currency">Акции</a></li>
+        <li class="main-nav__item"><a href="#calculate">Калькулятор</a></li>
+        <li class="main-nav__item"><a href="#to-do">Преимущества</a></li>
       </ul>
 
-      <a class="button button--main-nav main-nav__button" href="#">Начать зарабатывать
+      <a class="button button--main-nav main-nav__button" href="#form2">Начать зарабатывать
         <!--main-nav__button - скрывает при закрытом меню на мобилке кнопку-->
         <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -64,13 +64,13 @@
 
         <div class="form__wrapper">
           <label class="visually-hidden" for="name1">Введите имя и фамилию</label>
-          <input type="text" id="name1" name="name" placeholder="Имя Фамилия">
+          <input type="text" id="name1" name="name" placeholder="Имя Фамилия" required>
 
           <label class="visually-hidden" for="tel1">Введите телефон</label>
-          <input type="tel" id="tel1" name="tel" placeholder="Телефон">
+          <input type="tel" id="tel1" name="tel" placeholder="Телефон" required>
 
           <label class="visually-hidden" for="email1">Введите email</label>
-          <input type="email" id="email1" name="email1" placeholder="Почта">
+          <input type="email" id="email1" name="email1" placeholder="Почта" required>
         </div>
 
         <button class="button button--open-navigation-posotion button--desktop-w275 main-nav__button"
@@ -85,30 +85,50 @@
 
     </section>
 
-    <section class="main-section">
+    <section class="main-section" id="vaccine">
       <div class="main-section__heading-wrapper main-section__heading-wrapper--bcg-vaccine">
         <h2 class="main-section__heading">Доходность исследований за&nbsp;2021&nbsp;год</h2>
       </div>
       <div class="vaccine">
-        <div class="vaccine__bar">
+        <div class="vaccine__bar vaccine__bar--mobile">
           <img src="img/vaccine.png" width="28" height="449" alt="Статус бар">
         </div>
 
         <div class="vaccine__groupe">
-          <div class="vaccine__wrapper">
-            <img src="img/moderna.svg" width="74" height="17" alt="Логотип Moderna">
-            <div class="vaccine__name vaccine__name--first">Moderna</div>
-            <div class="vaccine__percent">+313.1%</div>
+          <div class="vaccine__big">
+            <div class="vaccine__bar vaccine__bar--moderna-desktop"></div>
+            <div class="vaccine__wrapper">
+              <svg class="vaccine__arrow" width="28" height="28">
+                <use xlink:href="img/sprite.svg#arrowDownRight"></use>
+              </svg>
+              <img class="vaccine__img" src="img/moderna.svg" width="74" height="17" alt="Логотип Moderna">
+              <div class="vaccine__name vaccine__name--first">Moderna</div>
+              <div class="vaccine__percent">+313.1%</div>
+            </div>
           </div>
-          <div class="vaccine__wrapper">
-            <img src="img/astraZeneca.svg" width="94" height="24" alt="Логотип AstraZeneca">
-            <div class="vaccine__name vaccine__name--second">AstraZeneca</div>
-            <div class="vaccine__percent">+286.8%</div>
+
+          <div class="vaccine__big">
+            <div class="vaccine__bar vaccine__bar--astraZeneca-desktop"></div>
+            <div class="vaccine__wrapper">
+              <svg class="vaccine__arrow" width="28" height="28">
+                <use xlink:href="img/sprite.svg#arrowDownRight"></use>
+              </svg>
+              <img class="vaccine__img" src="img/astraZeneca.svg" width="94" height="24" alt="Логотип AstraZeneca">
+              <div class="vaccine__name vaccine__name--second">AstraZeneca</div>
+              <div class="vaccine__percent">+286.8%</div>
+            </div>
           </div>
-          <div class="vaccine__wrapper">
-            <img src="img/pfizer.svg" width="40" height="24" alt="Логотип Pfizer">
-            <div class="vaccine__name vaccine__name--third">Pfizer</div>
-            <div class="vaccine__percent">+218.4%</div>
+
+          <div class="vaccine__big">
+            <div class="vaccine__bar vaccine__bar--pfizer-desktop"></div>
+            <div class="vaccine__wrapper">
+              <svg class="vaccine__arrow" width="28" height="28">
+                <use xlink:href="img/sprite.svg#arrowDownRight"></use>
+              </svg>
+              <img class="vaccine__img" src="img/pfizer.svg" width="40" height="24" alt="Логотип Pfizer">
+              <div class="vaccine__name vaccine__name--third">Pfizer</div>
+              <div class="vaccine__percent">+218.4%</div>
+            </div>
           </div>
         </div>
       </div>
@@ -116,7 +136,7 @@
 
     </section>
 
-    <section class="main-section">
+    <section class="main-section" id="about">
       <div class="main-section__heading-wrapper main-section__heading-wrapper--bcg-about">
         <h2 class="main-section__heading">О проекте</h2>
       </div>
@@ -189,7 +209,7 @@
       </div>
     </section>
 
-    <section class="main-section">
+    <section class="main-section" id="currency">
       <div class="main-section__heading-wrapper main-section__heading-wrapper--bcg-currency">
         <h2 class="main-section__heading">Актуальный курс</h2>
       </div>
@@ -249,7 +269,7 @@
       </div>
     </section>
 
-    <section class="main-section">
+    <section class="main-section" id="to-do">
       <div class="main-section__heading-wrapper main-section__heading-wrapper--bcg-to-do">
         <h2 class="main-section__heading">Получение прибыли от фарминдустрии</h2>
       </div>
@@ -306,7 +326,7 @@
       </div>
     </section>
 
-    <section class="main-section">
+    <section class="main-section" id="calculate">
       <div class="main-section__heading-wrapper main-section__heading-wrapper--bcg-calculate">
         <h2 class="main-section__heading">Рассчитайте прибыль от своих инвестиций</h2>
       </div>
@@ -322,8 +342,15 @@
             </label>
           </div>
           <div class="calculate__progress"></div>
-          <div class="calculate__shares">Другие акции</div>
-          <div class="calculate__vaccine">Вакцины</div>
+          <div class="calculate__result">
+            <div class="calculate__bar calculate__bar--dark"></div>
+            <span>Другие акции</span>
+          </div>
+
+          <div class="calculate__result">
+            <div class="calculate__bar calculate__bar--blue"></div>
+            <span>Вакцины</span>
+          </div>
         </div>
 
         <div class="calculate__wrapper calculate__wrapper--img">
@@ -337,20 +364,20 @@
       </div>
     </section>
 
-    <form class="form form--bottom">
+    <form class="form form--bottom" id="form2">
       <h2 class="form__heading form__heading--center">Используйте передовые технологии для анализа рынка и зарабатывайте
         уже сегодня на том,
         что будет популярно завтра</h2>
 
       <div class="form__wrapper">
         <label class="visually-hidden" for="name1">Введите имя и фамилию</label>
-        <input type="text" id="name2" name="name" placeholder="Имя Фамилия">
+        <input type="text" id="name2" name="name" placeholder="Имя Фамилия" required>
 
         <label class="visually-hidden" for="tel1">Введите телефон</label>
-        <input type="tel" id="tel2" name="tel" placeholder="Телефон">
+        <input type="tel" id="tel2" name="tel" placeholder="Телефон" required>
 
         <label class="visually-hidden" for="email1">Введите email</label>
-        <input type="email" id="email2" name="email1" placeholder="Почта">
+        <input type="email" id="email2" name="email1" placeholder="Почта" required>
       </div>
 
       <button class="button button--open-navigation-posotion button--desktop-w303-center main-nav__button"

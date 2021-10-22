@@ -2,13 +2,45 @@
   display: flex;
 }
 
+.vaccine__big {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .vaccine__bar {
   @media (min-width: $desktop-width) {
-    display: none;
+    min-height: 200px;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--moderna-desktop {
+      background: url("../../img/barModerna.png") no-repeat;
+      background-size: contain;
+      width: 24px;
+    }
+
+    &--astraZeneca-desktop {
+      background: url("../../img/barAstraZeneca.png") no-repeat;
+      background-size: contain;
+      width: 24px;
+    }
+
+    &--pfizer-desktop {
+      background: url("../../img/barPfizer.png") no-repeat;
+      background-size: contain;
+      width: 24px;
+    }
   }
 }
 
 .vaccine__groupe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -16,18 +48,17 @@
     width: 100%;
     border-left: none;
   }
-
-  // &::before {
-  //   display: flex;
-  //   align-items: row;
-  //   content: "";
-  // }
 }
 
 .vaccine__wrapper {
   box-sizing: border-box;
   padding-left: 8px;
   margin-bottom: 48px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .vaccine__wrapper:last-child {
@@ -78,4 +109,19 @@
   background: $gradient; //Gradient color
   background-clip: text; //Gradient color
   -webkit-text-fill-color: transparent; //Gradient color
+}
+
+.vaccine__arrow {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+.vaccine__img {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 8px;
+  }
 }
