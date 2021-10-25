@@ -4,6 +4,9 @@
   padding: 16px;
 
   &--top {
+    min-height: 430px;
+    justify-content: space-between;
+
     & .form__wrapper {
       display: flex;
       flex-direction: column;
@@ -24,6 +27,8 @@
   }
 
   &--bottom {
+    justify-content: space-between;
+    min-height: 630px;
     padding-top: 32px;
     padding-bottom: 32px;
     margin-bottom: 24px;
@@ -39,6 +44,7 @@
 
     @media (min-width: $desktop-width) {
       grid-column: span 3;
+      min-height: 448px;
       padding-right: 336px;
       padding-left: 336px;
       margin: 0 auto;
@@ -48,6 +54,7 @@
       & .form__wrapper {
         display: flex;
         flex-direction: column;
+        max-width: 304px;
         margin: 0 auto;
         margin-bottom: 24px;
         min-width: 303px;
@@ -93,10 +100,6 @@
   background-color: inherit;
   color: $basic-white;
   opacity: 0.9;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 
   &::placeholder {
     color: $basic-white;

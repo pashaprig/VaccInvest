@@ -9,6 +9,19 @@
   z-index: 2;
   box-shadow: 0 5px 15px rgba(231, 229, 229, 0.9);
 
+  // &--closed {
+  //   animation-name: bounceOut;
+  //   animation-duration: 0.6s;
+  //   animation-fill-mode: forwards;
+  // }
+
+  // &--opened {
+  //   display: block;
+  //   animation-name: bounceIn;
+  //   animation-duration: 0.6s;
+  // }
+
+
   &--closed .main-nav__list {
     display: none;
 
