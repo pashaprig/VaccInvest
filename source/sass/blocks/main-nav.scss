@@ -15,12 +15,15 @@
   //   animation-fill-mode: forwards;
   // }
 
-  // &--opened {
-  //   display: block;
-  //   animation-name: bounceIn;
-  //   animation-duration: 0.6s;
-  // }
+  &--opened {
+    display: block;
+    animation-name: bounceIn;
+    animation-duration: 0.5s;
 
+    @media (min-width: $desktop-width) {
+      animation: none;
+    }
+  }
 
   &--closed .main-nav__list {
     display: none;
