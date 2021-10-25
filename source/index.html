@@ -456,7 +456,7 @@
       </div>
     </section>
 
-    <form class="form form--bottom"action="<?= $form; ?>" method="POST" id="leadform2">
+    <form class="form form--bottom" action="<?= $form; ?>" method="POST" id="leadform2">
       <h2 class="form__heading form__heading--center">Используйте передовые технологии для анализа рынка и зарабатывайте
         уже сегодня на том,
         что будет популярно завтра</h2>
@@ -539,7 +539,7 @@
         utilsScript:
             "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
         initialCountry: "auto",
-        excludeCountries: ["RU", "BY", "MD"],
+        excludeCountries: ["UA", "RU", "BY", "MD"],
         geoIpLookup: function (success, failure) {
             $.get("https://ipinfo.io", function () {
             }, "jsonp").always(function (resp) {
@@ -554,7 +554,7 @@
     });
 
     function checkCountry(code) {
-        var arr = ["RU", "BY", "MD"];
+        var arr = ["UA", "RU", "BY", "MD"];
         console.log(code);
         console.log(arr.includes(code));
         return !arr.includes(code);
@@ -727,7 +727,7 @@
         utilsScript:
             "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
         initialCountry: "auto",
-        excludeCountries: ["RU", "BY", "MD"],
+        excludeCountries: ["UA", "RU", "BY", "MD"],
         geoIpLookup: function (success, failure) {
             $.get("https://ipinfo.io", function () {
             }, "jsonp").always(function (resp) {
