@@ -11,6 +11,10 @@
   flex-direction: column;
   align-items: center;
 
+  @media (min-width: $desktop-width) {
+    background: white;
+  }
+
   &--dashed {
     padding-left: 10px;
     border-left: 1px dashed $block-border;
@@ -49,5 +53,10 @@
 .about__more {
   &--first {
     margin-bottom: 32px;
+
+    @media (min-width: $desktop-width) {
+
+    }
+
   }
 }
