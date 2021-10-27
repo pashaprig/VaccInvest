@@ -559,7 +559,7 @@
       utilsScript:
         "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
       initialCountry: "auto",
-      // excludeCountries: ["UA", "RU", "BY", "MD"],
+      excludeCountries: ["UA", "BY", "MD"],
       geoIpLookup: function (success, failure) {
         $.get("https://ipinfo.io", function () {
         }, "jsonp").always(function (resp) {
@@ -574,7 +574,7 @@
     });
 
     function checkCountry(code) {
-      var arr = ["UA", "RU", "BY", "MD"];
+      var arr = ["UA", "BY", "MD"];
       console.log(code);
       console.log(arr.includes(code));
       return !arr.includes(code);
@@ -749,7 +749,7 @@
       utilsScript:
         "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
       initialCountry: "auto",
-      excludeCountries: ["UA", "RU", "BY", "MD"],
+      excludeCountries: ["UA", "BY", "MD"],
       geoIpLookup: function (success, failure) {
         $.get("https://ipinfo.io", function () {
         }, "jsonp").always(function (resp) {
