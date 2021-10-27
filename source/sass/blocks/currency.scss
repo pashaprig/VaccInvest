@@ -3,6 +3,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-right: 5px;
+    margin-left: 5px;
   }
 }
 
@@ -17,6 +19,7 @@
   @media (min-width: $desktop-width) {
     width: 304px;
     box-sizing: border-box;
+    background-color: $basic-white;
   }
 }
 

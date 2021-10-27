@@ -20,6 +20,7 @@
 
 .main-section__heading-wrapper {
   position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   padding: 8px;
@@ -38,7 +39,7 @@
     position: absolute;
     top: -2px;
     bottom: -2px;
-    left: -2px;
+    left: 0;
     right: -2px;
     background: $gradient;
     border-radius: 5px;

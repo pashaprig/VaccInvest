@@ -15,6 +15,12 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
 
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
   &:last-child {
     margin-bottom: 0;
 

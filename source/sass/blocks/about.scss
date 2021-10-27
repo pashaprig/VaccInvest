@@ -11,9 +11,9 @@
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: $desktop-width) {
-    background: white;
-  }
+  // @media (min-width: $desktop-width) {
+  //   background: white;
+  // }
 
   &--dashed {
     padding-left: 10px;
