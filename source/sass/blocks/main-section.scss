@@ -20,7 +20,6 @@
 
 .main-section__heading-wrapper {
   position: relative;
-  z-index: 2;
   display: flex;
   align-items: center;
   padding: 8px;
@@ -39,11 +38,15 @@
     position: absolute;
     top: -2px;
     bottom: -2px;
-    left: 0;
+    left: -2px;
     right: -2px;
     background: $gradient;
     border-radius: 5px;
     z-index: -1;
+
+    @media (min-width: $desktop-width) {
+      left: 0;
+    }
   }
 
   &--bcg-vaccine {
@@ -92,6 +95,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    z-index: 2;
     box-sizing: border-box;
     display: inline-flex;
     min-height: 64px;
