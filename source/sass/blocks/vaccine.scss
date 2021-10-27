@@ -1,16 +1,27 @@
 .vaccine {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .vaccine__big {
+  box-sizing: border-box;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+
   @media (min-width: $desktop-width) {
     display: flex;
   }
 }
 
+.vaccine__big--selected {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
 .vaccine__bar {
   @media (min-width: $desktop-width) {
-    min-height: 200px;
+    min-height: 165px;
 
     &--mobile {
       display: none;
@@ -40,6 +51,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  flex-grow: 1;
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -51,9 +63,11 @@
 }
 
 .vaccine__wrapper {
+  flex-grow: 1;
   box-sizing: border-box;
   padding-left: 8px;
   margin-bottom: 48px;
+
 
   @media (min-width: $desktop-width) {
     display: flex;

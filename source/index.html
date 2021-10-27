@@ -94,6 +94,7 @@
   <header class="page-header">
     <div class="logo">
       <img class="logo__img" src="img/logo.png" width="35" height="35" alt="VaccInvest логотип">
+      <!--<?= $path; ?>img/logo.png-->
       <p class="logo__name">VaccInvest</p>
     </div>
 
@@ -106,7 +107,8 @@
         <li class="main-nav__item" onclick="closeMobileMenu()"><a href="#to-do">Преимущества</a></li>
       </ul>
 
-      <a class="button button--main-nav main-nav__button" href="#leadform2" onclick="closeMobileMenu()">Начать&nbsp;зарабатывать
+      <a class="button button--main-nav main-nav__button" href="#leadform2"
+        onclick="closeMobileMenu()">Начать&nbsp;зарабатывать
         <!--main-nav__button - скрывает при закрытом меню на мобилке кнопку-->
         <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -139,16 +141,19 @@
           от&nbsp;80% в&nbsp;месяц</h1>
 
         <div class="form__wrapper">
-          <label class="visually-hidden" for="name1">Введите имя и фамилию</label>
-          <input type="text" id="name" name="name" placeholder="Имя Фамилия">
-
-          <label class="visually-hidden" for="tel1">Введите телефон</label>
-          <input type="tel" id="phone1" name="phone1" placeholder="">
-
-          <label class="visually-hidden" for="email1">Введите email</label>
-          <input type="email" id="email" name="email" placeholder="Почта">
-
-          <input id="realPhone1" class="hidden-phone" type="hidden" name="phone" value="" />
+          <div class="inputWrapper">
+            <label class="visually-hidden" for="name1">Введите имя и фамилию</label>
+            <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="inputWrapper">
+            <label class="visually-hidden" for="tel1">Введите телефон</label>
+            <input type="tel" id="phone1" name="phone1" placeholder="">
+            <input id="realPhone1" class="hidden-phone" type="hidden" name="phone" value="" />
+          </div>
+          <div class="inputWrapper">
+            <label class="visually-hidden" for="email1">Введите email</label>
+            <input type="email" id="email" name="email" placeholder="Почта">
+          </div>
 
           <input type="hidden" name="currency" value="eur">
           <input id="country1" type="hidden" name="country" value="ru">
@@ -194,7 +199,7 @@
             </div>
           </div>
 
-          <div class="vaccine__big">
+          <div class="vaccine__big vaccine__big--selected">
             <div class="vaccine__bar vaccine__bar--astraZeneca-desktop"></div>
             <div class="vaccine__wrapper">
               <svg class="vaccine__arrow" width="28" height="28">
@@ -219,8 +224,7 @@
           </div>
         </div>
       </div>
-
-
+      <a class="button button--vaccine" href="#leadform2">Подтвердить выбор</a>
     </section>
 
     <section class="main-section" id="about">
@@ -309,6 +313,9 @@
             <span class="currency__percent">$50.42</span>
           </div>
           <div class="currency__dynamic">
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.9919 7.1999H1.00939C0.111808 7.1999 -0.336986 6.14561 0.296358 5.53094L5.28761 0.686882C5.68188 0.304242 6.31942 0.304242 6.70949 0.686882L11.7007 5.53094C12.3383 6.14561 11.8895 7.1999 10.9919 7.1999Z" fill="#19C576"/>
+            </svg>
             <span>1.51%</span>
           </div>
         </div>
@@ -320,6 +327,9 @@
             <span class="currency__percent">$59.35</span>
           </div>
           <div class="currency__dynamic">
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.9919 7.1999H1.00939C0.111808 7.1999 -0.336986 6.14561 0.296358 5.53094L5.28761 0.686882C5.68188 0.304242 6.31942 0.304242 6.70949 0.686882L11.7007 5.53094C12.3383 6.14561 11.8895 7.1999 10.9919 7.1999Z" fill="#19C576"/>
+            </svg>
             <span>1.02%</span>
           </div>
         </div>
@@ -331,6 +341,9 @@
             <span class="currency__percent">$401.86</span>
           </div>
           <div class="currency__dynamic">
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.9919 7.1999H1.00939C0.111808 7.1999 -0.336986 6.14561 0.296358 5.53094L5.28761 0.686882C5.68188 0.304242 6.31942 0.304242 6.70949 0.686882L11.7007 5.53094C12.3383 6.14561 11.8895 7.1999 10.9919 7.1999Z" fill="#19C576"/>
+            </svg>
             <span>32.17%</span>
           </div>
         </div>
@@ -343,6 +356,9 @@
             <span class="currency__percent">$179.47</span>
           </div>
           <div class="currency__dynamic currency__dynamic--red">
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.0081 0.800097L10.9906 0.800098C11.8882 0.800098 12.337 1.85439 11.7036 2.46906L6.71239 7.31312C6.31812 7.69576 5.68058 7.69576 5.29051 7.31312L0.299256 2.46906C-0.338282 1.85439 0.110511 0.800097 1.0081 0.800097Z" fill="#C51919"/>
+            </svg>
             <span>0.01%</span>
           </div>
         </div>
@@ -462,14 +478,18 @@
         что будет популярно завтра</h2>
 
       <div class="form__wrapper">
-        <label class="visually-hidden" for="name2">Введите имя и фамилию</label>
-        <input type="text" id="name2" name="name" placeholder="Имя Фамилия">
-
-        <label class="visually-hidden" for="phone2">Введите телефон</label>
-        <input type="tel" id="phone2" name="phone2" placeholder="">
-
-        <label class="visually-hidden" for="email2">Введите email</label>
-        <input type="email" id="email2" name="email" placeholder="Почта">
+        <div class="inputWrapper">
+          <label class="visually-hidden" for="name2">Введите имя и фамилию</label>
+          <input type="text" id="name2" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div class="inputWrapper">
+          <label class="visually-hidden" for="phone2">Введите телефон</label>
+          <input type="tel" id="phone2" name="phone2" placeholder="">
+        </div>
+        <div class="inputWrapper">
+          <label class="visually-hidden" for="email2">Введите email</label>
+          <input type="email" id="email2" name="email" placeholder="Почта">
+        </div>
       </div>
 
       <input id="realPhone2" class="hidden-phone" type="hidden" name="phone" value="" />
@@ -535,46 +555,46 @@
     //first form
     var input1 = document.querySelector("#phone1");
     var phoneInput1 = window.intlTelInput(input1, {
-        separateDialCode: true,
-        utilsScript:
-            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-        initialCountry: "auto",
-        excludeCountries: ["UA", "RU", "BY", "MD"],
-        geoIpLookup: function (success, failure) {
-            $.get("https://ipinfo.io", function () {
-            }, "jsonp").always(function (resp) {
-                console.log(resp.country);
-                $("#country1").val(resp.country);
-                $("#country2").val(resp.country);
-                var countryCode =
-                    resp && checkCountry(resp.country) ? resp.country : "DE";
-                success(countryCode);
-            });
-        },
+      separateDialCode: true,
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      initialCountry: "auto",
+      // excludeCountries: ["UA", "RU", "BY", "MD"],
+      geoIpLookup: function (success, failure) {
+        $.get("https://ipinfo.io", function () {
+        }, "jsonp").always(function (resp) {
+          console.log(resp.country);
+          $("#country1").val(resp.country);
+          $("#country2").val(resp.country);
+          var countryCode =
+            resp && checkCountry(resp.country) ? resp.country : "DE";
+          success(countryCode);
+        });
+      },
     });
 
     function checkCountry(code) {
-        var arr = ["UA", "RU", "BY", "MD"];
-        console.log(code);
-        console.log(arr.includes(code));
-        return !arr.includes(code);
+      var arr = ["UA", "RU", "BY", "MD"];
+      console.log(code);
+      console.log(arr.includes(code));
+      return !arr.includes(code);
     }
 
     $.validator.addMethod(
-        "validNumber",
-        function (value, element, params) {
-            var obj = params.object;
-            if (obj.isValidNumber()) {
-                var num = obj.getNumber().replace("+", "");
-                console.log(num);
-                $(element)
-                    .closest("form")
-                    .find(".hidden-phone")
-                    .val("+" + num);
-            }
-            return obj.isValidNumber();
-        },
-        "Введите правильный номер!"
+      "validNumber",
+      function (value, element, params) {
+        var obj = params.object;
+        if (obj.isValidNumber()) {
+          var num = obj.getNumber().replace("+", "");
+          console.log(num);
+          $(element)
+            .closest("form")
+            .find(".hidden-phone")
+            .val("+" + num);
+        }
+        return obj.isValidNumber();
+      },
+      "Введите правильный номер!"
     );
 
     // Запрет ввода в поля больше двух пробелов подряд
@@ -584,214 +604,220 @@
     const emailForm2 = document.querySelector("#email2");
 
     function removeExtraSpaces(e) {
-        const valueWithoutSpaces = e.target.value.replace(/\s+/g, ' ').replace(/^\s+|\s+$/,'');
-        e.target.value = valueWithoutSpaces
+      const valueWithoutSpaces = e.target.value.replace(/\s+/g, ' ').replace(/^\s+|\s+$/, '');
+      e.target.value = valueWithoutSpaces
     }
     nameForm1.addEventListener("focusout", removeExtraSpaces);
     nameForm2.addEventListener("focusout", removeExtraSpaces);
 
     // Валидация формы
     $.validator.addMethod(
-        "alphanumeric",
-        function (value, element) {
-            return this.optional(element) || /^[a-zA-Zа-яА-ЯЁё\s]+$/.test(value.replace(/ +/g, ' ').trim()); //RU
-        },
-        "Имя может содержать только буквы!"
+      "alphanumeric",
+      function (value, element) {
+        return this.optional(element) || /^[a-zA-Zа-яА-ЯЁё\s]+$/.test(value.replace(/ +/g, ' ').trim()); //RU
+      },
+      "Имя может содержать только буквы!"
     );
     // Email validation
-    $.validator.addMethod("emailValidation", function(value, element) {
-        return this.optional(element) || /^[a-zA-Z0-9_.!#$%&\'*+\-\/=?^_`{|}~]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?){1,61}$/g.test( value );
+    $.validator.addMethod("emailValidation", function (value, element) {
+      return this.optional(element) || /^[a-zA-Z0-9_.!#$%&\'*+\-\/=?^_`{|}~]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?){1,61}$/g.test(value);
     }, "Введите правильный email!");
 
 
-    function removeDotsHyphens(e){
-        const valueWithoutDotsHyphens = e.target.value.replace(/\.+/g,'.').replace(/-{2,}/g,'--').replace(/^\.|^-*/,'').replace(/\.@/,'@');
-        e.target.value = valueWithoutDotsHyphens;
+    function removeDotsHyphens(e) {
+      const valueWithoutDotsHyphens = e.target.value.replace(/\.+/g, '.').replace(/-{2,}/g, '--').replace(/^\.|^-*/, '').replace(/\.@/, '@');
+      e.target.value = valueWithoutDotsHyphens;
     }
     emailForm1.addEventListener("change", removeDotsHyphens);
     emailForm2.addEventListener("change", removeDotsHyphens);
 
     //Trim whitespace on email input
-    $(function()
-    {
-        $('input[type=email]').on('keypress', function(e)
-        {
-            if (e.which == 32)
-                return false;
-        });
+    $(function () {
+      $('input[type=email]').on('keypress', function (e) {
+        if (e.which == 32)
+          return false;
+      });
     });
 
     $("#leadform1").validate({
-        rules: {
-            phone1: {
-                required: true,
-                validNumber: {
-                    object: phoneInput1,
-                },
-            },
-            name: {
-                required: true,
-                alphanumeric: true,
-            },
-            email: {
-                required: true,
-                email:false,
-                emailValidation: true,
-            }
+      errorPlacement: function (error, element) {
+        var parent = element.closest('.inputWrapper');
+        error.appendTo(parent);
+      },
+      rules: {
+        phone1: {
+          required: true,
+          validNumber: {
+            object: phoneInput1,
+          },
         },
-        messages: {
-            phone1: {
-                required: "Это поле обязательное",
-            },
-            name: {
-                required: "Это поле обязательное",
-            },
-            email: {
-                required: "Это поле обязательное"
-            },
+        name: {
+          required: true,
+          alphanumeric: true,
         },
-        submitHandler: function (form, event) {
-            sendAjaxForm(form);
-            return false;
-
+        email: {
+          required: true,
+          email: false,
+          emailValidation: true,
         }
+      },
+      messages: {
+        phone1: {
+          required: "Это поле обязательное",
+        },
+        name: {
+          required: "Это поле обязательное",
+        },
+        email: {
+          required: "Это поле обязательное"
+        },
+      },
+      submitHandler: function (form, event) {
+        sendAjaxForm(form);
+        return false;
+
+      }
     });
 
     function sendAjaxForm(form) {
-        $.ajax({
-            url: $(form).attr('action'),
-            type: "POST", //метод отправки
-            dataType: "json", //формат данных
-            data: $(form).serialize(),  // Сеарилизуем объект
-            timeout: 30000,
-            beforeSend: function () {
-                $(form).find(".submit_btn ").html('Отправка');
-                $(form).find(".submit_btn").prop('disabled', true); // disable button
-            },
+      $.ajax({
+        url: $(form).attr('action'),
+        type: "POST", //метод отправки
+        dataType: "json", //формат данных
+        data: $(form).serialize(),  // Сеарилизуем объект
+        timeout: 30000,
+        beforeSend: function () {
+          $(form).find(".submit_btn ").html('Отправка');
+          $(form).find(".submit_btn").prop('disabled', true); // disable button
+        },
 
-        }).done(function (response) { //Данные отправлены успешно
-            let result = response;
-            let url = result.url;
-            console.log(response);
-            if (response.status === 'ok') {
-                fbq('track', 'Lead');
-                call_gtag();
-                ttq.page();
-                console.log('Lead');
-                $(form).find(".submit_btn").html('Данные отправлены успешно');
-                if (response.url) {
-                    setTimeout(function () {
-                        window.location.href = response.url;
-                    }, 1000);
-                } else {
-                    $(form).html('<div class="form_message success" style="display: block;margin:15px 0;background-color: #d4ffe0;border: 2px dashed #1f6b34;border-radius: 10px;padding: 20px;">Ваши данные успешно отправлены. Ожидайте звонка от нашего менеджера.</div>');
-                }
+      }).done(function (response) { //Данные отправлены успешно
+        let result = response;
+        let url = result.url;
+        console.log(response);
+        if (response.status === 'ok') {
+          fbq('track', 'Lead');
+          call_gtag();
+          ttq.page();
+          console.log('Lead');
+          $(form).find(".submit_btn").html('Данные отправлены успешно');
+          if (response.url) {
+            setTimeout(function () {
+              window.location.href = response.url;
+            }, 1000);
+          } else {
+            $(form).html('<div class="form_message success" style="display: block;margin:15px 0;background-color: #d4ffe0;border: 2px dashed #1f6b34;border-radius: 10px;padding: 20px;">Ваши данные успешно отправлены. Ожидайте звонка от нашего менеджера.</div>');
+          }
 
-            } else {
-                $(form).find('.error.form_message').addClass('active');
-                $(form).find('.error.form_message').html(response.message);
-                $(form).find(".submit_btn ").html('Начать зарабатывать');
-                $(form).find(".submit_btn").prop('disabled', false); // disable button
-            }
+        } else {
+          $(form).find('.error.form_message').addClass('active');
+          $(form).find('.error.form_message').html(response.message);
+          $(form).find(".submit_btn ").html('Начать зарабатывать');
+          $(form).find(".submit_btn").prop('disabled', false); // disable button
+        }
 
 
-        }).fail(function (response) { // Данные не отправлены
-            console.log(response);
-            console.log('Ошибка. Данные не отправлены.');
-            $(form).find('.error.form_message').addClass('active');
-            $(form).find('.error.form_message').html('Во время отправки данных произошла ошибка!');
-            $(form).find(".submit_btn ").html('Начать зарабатывать');
-            $(form).find(".submit_btn").prop('disabled', false); // disable button
-        });
+      }).fail(function (response) { // Данные не отправлены
+        console.log(response);
+        console.log('Ошибка. Данные не отправлены.');
+        $(form).find('.error.form_message').addClass('active');
+        $(form).find('.error.form_message').html('Во время отправки данных произошла ошибка!');
+        $(form).find(".submit_btn ").html('Начать зарабатывать');
+        $(form).find(".submit_btn").prop('disabled', false); // disable button
+      });
     }
 
     $(window).on("load", function () {
-        setTimeout(function () {
-            var mask1 = jQuery("#phone1").attr("placeholder").replace(/[0-9]/g, 9);
+      setTimeout(function () {
+        var mask1 = jQuery("#phone1").attr("placeholder").replace(/[0-9]/g, 9);
 
-            $(document).ready(function () {
-                jQuery("#phone1").mask(mask1);
-            });
+        $(document).ready(function () {
+          jQuery("#phone1").mask(mask1);
+        });
 
-            jQuery("#phone1").on("countrychange", function (e, countryData) {
-                jQuery("#phone1").val("");
-                var mask1 = $("#phone1").attr("placeholder").replace(/[0-9]/g, 9);
-                jQuery("#phone1").mask(mask1);
-            });
-        }, 1000);
+        jQuery("#phone1").on("countrychange", function (e, countryData) {
+          jQuery("#phone1").val("");
+          var mask1 = $("#phone1").attr("placeholder").replace(/[0-9]/g, 9);
+          jQuery("#phone1").mask(mask1);
+        });
+      }, 1000);
     });
     //second form
     var input2 = document.querySelector("#phone2");
     var phoneInput2 = window.intlTelInput(input2, {
-        separateDialCode: true,
-        utilsScript:
-            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-        initialCountry: "auto",
-        excludeCountries: ["UA", "RU", "BY", "MD"],
-        geoIpLookup: function (success, failure) {
-            $.get("https://ipinfo.io", function () {
-            }, "jsonp").always(function (resp) {
-                console.log(resp.country);
-                var countryCode =
-                    resp && checkCountry(resp.country) ? resp.country : "DE";
-                success(countryCode);
-            });
-        },
+      separateDialCode: true,
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      initialCountry: "auto",
+      excludeCountries: ["UA", "RU", "BY", "MD"],
+      geoIpLookup: function (success, failure) {
+        $.get("https://ipinfo.io", function () {
+        }, "jsonp").always(function (resp) {
+          console.log(resp.country);
+          var countryCode =
+            resp && checkCountry(resp.country) ? resp.country : "DE";
+          success(countryCode);
+        });
+      },
     });
 
     $("#leadform2").validate({
-        rules: {
-            phone2: {
-                required: true,
-                validNumber: {
-                    object: phoneInput2,
-                },
-            },
-            name: {
-                required: true,
-                alphanumeric: true,
-            },
-            email: {
-                required: true,
-                email:false,
-                emailValidation: true,
-            }
+      errorPlacement: function (error, element) {
+        var parent = element.closest('.inputWrapper');
+        error.appendTo(parent);
+      },
+      rules: {
+        phone2: {
+          required: true,
+          validNumber: {
+            object: phoneInput2,
+          },
         },
-        messages: {
-            phone2: {
-                required: "Это поле обязательное",
-            },
-            name: {
-                required: "Это поле обязательное",
-            },
-            email: {
-                required: "Это поле обязательное"
-            },
+        name: {
+          required: true,
+          alphanumeric: true,
         },
-        submitHandler: function (form, event) {
-            sendAjaxForm(form);
-            return false;
+        email: {
+          required: true,
+          email: false,
+          emailValidation: true,
+        }
+      },
+      messages: {
+        phone2: {
+          required: "Это поле обязательное",
+        },
+        name: {
+          required: "Это поле обязательное",
+        },
+        email: {
+          required: "Это поле обязательное"
+        },
+      },
+      submitHandler: function (form, event) {
+        sendAjaxForm(form);
+        return false;
 
-        },
+      },
     });
 
     $(window).on("load", function () {
-        setTimeout(function () {
-            var mask1 = jQuery("#phone2").attr("placeholder").replace(/[0-9]/g, 9);
+      setTimeout(function () {
+        var mask1 = jQuery("#phone2").attr("placeholder").replace(/[0-9]/g, 9);
 
-            $(document).ready(function () {
-                jQuery("#phone2").mask(mask1);
-            });
+        $(document).ready(function () {
+          jQuery("#phone2").mask(mask1);
+        });
 
-            jQuery("#phone2").on("countrychange", function (e, countryData) {
-                jQuery("#phone2").val("");
-                var mask1 = $("#phone2").attr("placeholder").replace(/[0-9]/g, 9);
-                jQuery("#phone2").mask(mask1);
-            });
-        }, 1000);
+        jQuery("#phone2").on("countrychange", function (e, countryData) {
+          jQuery("#phone2").val("");
+          var mask1 = $("#phone2").attr("placeholder").replace(/[0-9]/g, 9);
+          jQuery("#phone2").mask(mask1);
+        });
+      }, 1000);
     });
     //
-</script>
+  </script>
 </body>
 
 </html>

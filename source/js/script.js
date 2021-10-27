@@ -65,3 +65,35 @@ if (window.localStorage) {
     })(elements[i]);
   }
 }
+
+
+
+//Vaccine select
+
+const vaccines = document.querySelectorAll(".vaccine__big");
+const vaccineSection = document.querySelectorAll(".vaccine");
+
+
+const addingClass = () => {
+  vaccines.forEach(function(e) {
+    e.addEventListener("click", function() {
+      resetingClasses();
+
+      e.classList.add('vaccine__big--selected');
+// //добавим кнопку
+//       const button = document.createElement('button');
+//       button.innerHTML = "Подтвердить выбор";
+//       e.insertAdjacentHTML('beforeend', button.outerHTML);
+    });
+});
+}
+
+const resetingClasses = () => {
+  for (var i = 0; i < vaccines.length; i++) {
+    if (vaccines[i].classList.contains('vaccine__big--selected')) {
+      console.log(vaccines[i])
+      vaccines[i].classList.remove('vaccine__big--selected')
+    }
+  }
+}
+addingClass()
