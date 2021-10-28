@@ -1,8 +1,8 @@
 .about {
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 32px;
+    display: flex;
+    // grid-template-columns: repeat(3, 1fr);
+    // column-gap: 32px;
   }
 }
 
@@ -11,9 +11,11 @@
   flex-direction: column;
   align-items: center;
 
-  // @media (min-width: $desktop-width) {
-  //   background: white;
-  // }
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    max-width: 415px;
+    min-height: 684px;
+  }
 
   &--dashed {
     padding-left: 10px;
@@ -21,6 +23,16 @@
 
     @media (min-width: $desktop-width) {
       border: none;
+    }
+  }
+
+  &--desctop-bcg {
+    @media (min-width: $desktop-width) {
+      min-width: 480px;
+      padding-right: 40px;
+      padding-left: 40px;
+      background-image: url(../../img/bcg.jpg);
+      background-size: cover;
     }
   }
 }
